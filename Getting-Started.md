@@ -33,3 +33,6 @@ This is different to the normal way most people animate. Usually, you would anim
 
 ## Exporting Your Model
 After you finish making your model in Blockbench, you need to export both the .java entity model and the .json animation file. You can export the model by going to File -> Export -> Export Animated Java Entity. You can export the animation json file by going to Animation -> Export Animations
+
+### Read Next
+To add your model and animation in game, read how to do so [here.](https://github.com/bernie-g/geckolib/wiki/Using-Your-Animations)
