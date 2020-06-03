@@ -9,6 +9,8 @@ Currently, we have:
 
 * [Flying Tigris](https://github.com/bernie-g/geckolib/blob/master/src/main/java/software/bernie/geckolib/example/entity/TigrisEntity.java) - Has two animation controllers, and showcases more features of AnimationBuilders.
 
+***
+
 ![](https://i.softwarelocker.net/QBA9sN.png)
 ![](https://i.softwarelocker.net/TNvYmu.png)
 ![](https://i.softwarelocker.net/YtpQYr.png)
