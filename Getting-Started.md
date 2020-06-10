@@ -1,6 +1,16 @@
 # Getting Started
 ## Installing
-//todo provide a curseforge link here
+
+To use the library in a dev environment, add this to your build.gradle file.
+```gradle
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.bernie-g:geckolib:1.0.0-1.15'
+}
+```
 
 ## Installing the Plugin
 In order to use blockbench (bedrock) animations in forge, you'll need to install the Geckolib blockbench plugin. You can find it by going to File -> Plugins -> Available -> Search for _"Gecko's Animation Utils"_
