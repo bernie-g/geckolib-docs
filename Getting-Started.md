@@ -8,7 +8,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.bernie-g:geckolib:1.0.0-1.15'
+    implementation 'com.github.bernie-g:geckolib:1.15-1.0.2'
 }
 ```
 
