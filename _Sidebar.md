@@ -1,0 +1,6 @@
+  * [Home](https://github.com/bernie-g/geckolib/wiki)
+  * [Getting Started](https://github.com/bernie-g/geckolib/wiki/Getting-Started)
+  * [Animations](https://github.com/bernie-g/geckolib/wiki/Using-Your-Animations)
+    * [Animation Controllers](https://github.com/bernie-g/geckolib/wiki/Animation-Controllers)
+    * [Examples](https://github.com/bernie-g/geckolib/wiki/Examples)
+  * [Troubleshooting](https://github.com/bernie-g/geckolib/wiki/Troubleshooting)
