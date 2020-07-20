@@ -8,7 +8,7 @@ There are three places you can change this setting. Listed in priority of highes
 3. `"loop" = true` in the animation json file. This can be configured in blockbench by right clicking your animation and selecting loop.
 
 This image explains how GeckoLib determines if an animation should loop.
-<img src="https://i.softwarelocker.net/Untitled%20Document.png" width="800" height="800">
+<img src="https://i.softwarelocker.net/Untitled%20Document%281%29.png" width="800" height="800">
 
 
 ## Overriding Easing
