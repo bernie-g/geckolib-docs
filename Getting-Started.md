@@ -71,6 +71,8 @@ In addition, there are three directions a curve can be applied. "In" usually mea
 
 ![easing-directions](https://user-images.githubusercontent.com/110764/87970177-38706e00-ca78-11ea-8091-aa532e8c15ad.gif)
 
+Source: [Prototypr](https://prototypr.io/news/animation-easing-functions-explained/)
+
 We implemented all of the easing curves from [easings.net](https://easings.net/) and recommend you check out that website for an interactive, animated explanation of all the different curves and directions.
 
 We also added a default "linear" curve to emulate bedrock behavior, and a "step" curve which snaps the value to a specified number of steps instead of moving smoothly. This can be used to animate things like clock hands or simulate a reduced framerate.
@@ -96,13 +98,14 @@ This can be used to customize the Java code template so that you can export many
 
 <img width="550" alt="Screen Shot 2020-07-20 at 9 39 56 AM" src="https://user-images.githubusercontent.com/110764/87968351-22ad7980-ca75-11ea-9ae3-2abb49ae0cdf.png">
 
-| Setting | Description |
-| --- | --- |
-| Modding SDK | Choose which Modding SDK and version you are using so code will be generated in the correct format. |
-| Entity Type | The fully qualified type name of your Entity which will be supplied as the type parameter to the model's superclass, `AnimatedEntityModel`, ex. `com.example.mymod.entities.MyEntity` |
-| Java Package | The Java package you want your model to be in, ex. `com.example.mymod.models` |
-| Animation File Namespace | The namespace where your animation file resource is in. This should probably be your mod ID, ex. `mymod`. |
-| Animation File Path | The path to the animation file inside the namespace, ex. `animations/my_animation.json`. |
+| Setting                  | Description                                                                                                                                                                           |
+| ---                      | ---                                                                                                                                                                                   |
+| Modding SDK              | Choose which Modding SDK and version you are using so code will be generated in the correct format.                                                                                   |
+| Entity Type              | The fully qualified type name of your Entity which will be supplied as the type parameter to the model's superclass, `AnimatedEntityModel`, ex. `com.example.mymod.entities.MyEntity` |
+| Java Package             | The Java package you want your model to be in, ex. `com.example.mymod.models`                                                                                                         |
+| Animation File Namespace | The namespace where your animation file resource is in. This should probably be your mod ID, ex. `mymod`.                                                                             |
+| Animation File Path      | The path to the animation file inside the namespace, ex. `animations/my_animation.json`.                                                                                              |
+
 
 ### Read Next
 To add your model and animation in game, read how to do so [here.](https://github.com/bernie-g/geckolib/wiki/Using-Your-Animations)
