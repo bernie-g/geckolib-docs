@@ -38,7 +38,7 @@ repositories {
 }
 
 dependencies {
-    implementation fg.deobf('com.github.bernie-g:geckolib:fabric-1.15-1.0.0')
+    modImplementation "com.github.bernie-g:geckolib:fabric-1.15-1.0.0"
 }
 ```
 
