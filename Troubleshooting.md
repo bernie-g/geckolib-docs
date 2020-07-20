@@ -7,4 +7,4 @@ Occasionally you may run into issues with GeckoLib. Before submitting an issue, 
 
 * **Animations take too long/too short to transition** - Make sure your transition length is in ticks. You can change this value in the `AnimationController` constructor or by setting the field directly.
 
-If you still have problems, feel free to make an issue on github.
+If you still have problems, feel free to ask in our [discord](https://discord.com/invite/MNQcKxB) or make a github issue.
