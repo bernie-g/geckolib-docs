@@ -13,6 +13,7 @@ For forge 1.12, make sure you have this in your minecraft block:
 ```gradle
 minecraft {
     useDepAts = true
-}```
+}
+```
 
 If you still have problems, feel free to ask in our [discord](https://discord.com/invite/MNQcKxB) or make a github issue.
