@@ -65,13 +65,13 @@ An easing curve is a mathematical function that can allow for animations to be i
 
 ![Easing Curves Animated Diagram](https://64.media.tumblr.com/5944bcf4f7fe9c0c99f7a593f233731a/tumblr_mj7bx09MDo1s5nl47o2_r1_500.gifv)
 
-Source: [1ucasvb](https://1ucasvb.tumblr.com/post/44666043888/easing-functions-are-an-immensely-useful-tool-for)
+_Source: [1ucasvb](https://1ucasvb.tumblr.com/post/44666043888/easing-functions-are-an-immensely-useful-tool-for). Note some curve names differ from ours but the principles are the same._
 
-In addition, there are three directions a curve can be applied. "In" usually means the curve is applied focusing on the beginning of the interpolation, focusing on a smooth-looking start. "In" usually means the curve is applied focusing on the end of the interpolation (the reverse of "in"), focusing on a smooth-looking end. "InOut" means the curve is symmetrically applied to both the start and end.
+In addition, there are three directions a curve can be applied. "In" usually means the curve is applied focusing on the beginning of the interpolation, focusing on a smooth-looking start. "In" usually means the curve is applied focusing on the end of the interpolation (the reverse of "in"), focusing on a smooth-looking end. "InOut" means the curve is symmetrically applied to both the start and end. In the animation above, when the animation plays from left to right it corresponds to "In", and when it plays backwards/right to left it corresponds to "Out". See below for a comparison:
 
 ![easing-directions](https://user-images.githubusercontent.com/110764/87970177-38706e00-ca78-11ea-8091-aa532e8c15ad.gif)
 
-Source: [Prototypr](https://prototypr.io/news/animation-easing-functions-explained/)
+_Source: [Prototypr](https://prototypr.io/news/animation-easing-functions-explained/)_
 
 We implemented all of the easing curves from [easings.net](https://easings.net/) and recommend you check out that website for an interactive, animated explanation of all the different curves and directions.
 
