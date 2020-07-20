@@ -124,6 +124,7 @@ After you finish making your model in Blockbench, you need to export both the .j
 
 ### (2.0) Animated Entity Settings Window
 GeckoLib 2.0 added an `Animated Entity Settings` Window which can be accessed from the `File` menu for Animated Java Entity projects:
+
 <img width="231" alt="Screen Shot 2020-07-20 at 10 38 53 AM" src="https://user-images.githubusercontent.com/110764/87968463-4ffa2780-ca75-11ea-9f41-a8320c3efd3e.png">
 
 This can be used to customize the Java code template so that you can export many times if needed without having to manually edit the code afterwards. These settings are completely optional, you can just edit the code by hand still if you prefer.
