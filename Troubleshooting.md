@@ -7,4 +7,12 @@ Occasionally you may run into issues with GeckoLib. Before submitting an issue, 
 
 * **Animations take too long/too short to transition** - Make sure your transition length is in ticks. You can change this value in the `AnimationController` constructor or by setting the field directly.
 
+* **Bytecode not matching/IllegalAccessException/ATs not working**
+For 1.15 forge, make sure you have `fg.deobg("url")`. Otherwise, forge won't remap geckolib to your current mappings.
+For forge 1.12, make sure you have this in your minecraft block:
+```gradle
+minecraft {
+    useDepAts = true
+}```
+
 If you still have problems, feel free to ask in our [discord](https://discord.com/invite/MNQcKxB) or make a github issue.
