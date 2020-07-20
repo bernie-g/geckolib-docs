@@ -1,4 +1,19 @@
 # Getting Started
+
+## Table of Contents
+
+   * [Getting Started](#getting-started)
+      * [Installing](#installing)
+      * [Installing the Plugin](#installing-the-plugin)
+      * [Creating a Model](#creating-a-model)
+      * [Converting an Existing Model](#converting-an-existing-model)
+      * [Animating](#animating)
+      * [Animation Concepts](#animation-concepts)
+      * [(2.0) Working with easing curves](#20-working-with-easing-curves)
+      * [Exporting Your Model](#exporting-your-model)
+         * [(2.0) Animated Entity Settings Window](#20-animated-entity-settings-window)
+         * [Read Next](#read-next)
+
 ## Installing
 
 To use the library in a dev environment, add this to your build.gradle file.
