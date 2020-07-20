@@ -109,6 +109,8 @@ We implemented all of the easing curves from [easings.net](https://easings.net/)
 
 We also added a default "linear" curve to emulate bedrock behavior, and a "step" curve which snaps the value to a specified number of steps instead of moving smoothly. This can be used to animate things like clock hands or simulate a reduced framerate.
 
+![step-demo](https://user-images.githubusercontent.com/110764/87971479-43c49900-ca7a-11ea-9369-35acc5c350bf.gif)
+
 In addition, we created arguments for the "back", "elastic", and "bounce" curves to give you additional control over their shapes.
 
 In GeckoLib, we use the right-hand or "to" keyframe to specify the easing for each tween. Therefore, there is no easing curve on the first keyframe in any timeline. You need to **make a second keyframe in order to assign an easing curve**.
