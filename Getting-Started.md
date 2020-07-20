@@ -41,6 +41,29 @@ In this example, you should make these animations in blockbench (examples):
 
 This is different to the normal way most people animate. Usually, you would animate the entire body at once and duplicate it + adjust keyframes. This can certainly work, but it will provide for a less seamless transition period in between animations. Additionally, the modular system Geckolib encourages allows for more possible animation combinations and a greater control for the developer.
 
+## (2.0) Working with easing curves
+GeckoLib 2.0 added a powerful new feature called easing curves. These allow you to create smooth, natural-looking animations with less effort than previously.
+
+In Bedrock and GeckoLib 1.0, the only type of "tweening" or interpolation that could be used between keyframes was linear interpolation, or "lerp". This means that as time progresses forwards, the value would change from the starting keyframe to the next keyframe at a constant speed. Real objects don't usually move in this way, they tend to need to accelerate a bit when starting and decelerate when stopping.
+
+An easing curve is a mathematical function that can allow for animations to be interpolated in a more gradual fashion. The value of the "tween" at any given point in time is taken from the given easing curve rather than a straight line. This allows you to easily achieve effects like a smooth start and stop, an object overshooting its destination and sliding back into place (back curve), or an object bouncing (bounce curve).
+
+In addition,
+
+We implemented all of the easing curves from [easings.net](https://easings.net/) and recommend you check out that website for an interactive, animated explanation of all the different curves.
+
+We also added a default "linear" curve to emulate bedrock behavior, and a "step" curve which snaps the value to a specified number of steps instead of moving smoothly. This can be used to animate things like clock hands or simulate a reduced framerate.
+
+In addition, we created arguments for the "back", "elastic", and "bounce" curves to give you additional control over their shapes.
+
+In GeckoLib, we use the right-hand or "to" keyframe to specify the easing for each tween. Therefore, there is no easing curve on the first keyframe in any timeline. You need to make a second keyframe in order to assign an easing curve.
+
+Eliot also made [a code sandbox to explore the different curves](https://editor.p5js.org/fadookie/present/rUp_FBuLn) and see the effect of the adjustment parameters for ones that have them. Feel free to play around with it if you find it helpful.
+
+Here's a short demo of how to use the easing curves editor:
+![easing-tutorial1](https://user-images.githubusercontent.com/110764/87967505-c39b3500-ca73-11ea-910c-65d72c772ccb.gif)
+
+
 ## Exporting Your Model
 After you finish making your model in Blockbench, you need to export both the .java entity model and the .json animation file. You can export the model by going to File -> Export -> Export Animated Java Entity. You can export the animation json file by going to Animation -> Export Animations
 
