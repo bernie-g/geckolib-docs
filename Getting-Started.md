@@ -16,19 +16,49 @@
 
 ## Installing
 
-To use the library in a dev environment, add this to your build.gradle file.
+To use the library in a dev environment, add this to your build.gradle file. For forge users, you _have to make a new repositories block_. Otherwise, your build will fail.
+
+
+
+For 1.15.2:
 ```gradle
 repositories {
     maven { url 'https://jitpack.io' }
 }
 
 dependencies {
-    implementation 'com.github.bernie-g:geckolib:1.15-1.0.2'
+    implementation fg.deobf('com.github.bernie-g:geckolib:1.15-1.0.2')
+}
+```
+
+For 1.15.2 Fabric:
+```gradle
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation fg.deobf('com.github.bernie-g:geckolib:fabric-1.15-1.0.0')
+}
+```
+
+For 1.12.2:
+```gradle
+minecraft {
+    useDepAts = true
+}
+
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.bernie-g:geckolib:1.0.0-1.12'
 }
 ```
 
 ## Installing the Plugin
-In order to use blockbench (bedrock) animations in forge, you'll need to install the Geckolib blockbench plugin. You can find it by going to File -> Plugins -> Available -> Search for _"Gecko's Animation Utils"_
+In order to use blockbench (bedrock) animations in forge, you'll need to install the Geckolib blockbench plugin. You can find it by going to File -> Plugins -> Available -> Search for _"GeckoLib Animation Utils"_
 
 ![blockbench plugin](https://i.softwarelocker.net/CIPrU7.png)
 
@@ -42,6 +72,8 @@ If you have already created a bedrock or normal java entity, you can convert it 
 
 ## Animating
 You can animate your model in the Animation tab on the right. Geckolib currently supports position, scale, and rotation keyframes. Support for sound, particle, and custom event keyframes is in development. It's also important that you set the loop setting to the appropriate value for each animation in the editor. This will determine if the animation will loop in game. You can set this value by right-clicking the animation in the Animation Pane and selecting loop.
+
+Animating in GeckoLib is almost exactly the same as how you would animate for a bedrock entity. There are currently no GeckoLib specific video tutorials, but you can watch this bedrock animation [tutorial](https://www.youtube.com/watch?v=eVYCXVzkp1Q) instead.
 
 ## Animation Concepts
 Ideally, animations should be split up as much as possible. Geckolib allows you to run multiple animations simultaneously, so in order to make the smoothest transitions, you should split up each logical animation. For example, if you're making a flying creature with several flying types, several running types, and several head movements, you should split each one into it's own animation and combine them in code. 
