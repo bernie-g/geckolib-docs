@@ -63,7 +63,13 @@ In Bedrock and GeckoLib 1.0, the only type of "tweening" or interpolation that c
 
 An easing curve is a mathematical function that can allow for animations to be interpolated in a more gradual fashion. The value of the "tween" at any given point in time is taken from the given easing curve rather than a straight line. This allows you to easily achieve effects like a smooth start and stop, an object overshooting its destination and sliding back into place (back curve), or an object bouncing (bounce curve).
 
+![Easing Curves Animated Diagram](https://64.media.tumblr.com/5944bcf4f7fe9c0c99f7a593f233731a/tumblr_mj7bx09MDo1s5nl47o2_r1_500.gifv)
+
+Source: [1ucasvb](https://1ucasvb.tumblr.com/post/44666043888/easing-functions-are-an-immensely-useful-tool-for)
+
 In addition, there are three directions a curve can be applied. "In" usually means the curve is applied focusing on the beginning of the interpolation, focusing on a smooth-looking start. "In" usually means the curve is applied focusing on the end of the interpolation (the reverse of "in"), focusing on a smooth-looking end. "InOut" means the curve is symmetrically applied to both the start and end.
+
+![easing-directions](https://user-images.githubusercontent.com/110764/87970177-38706e00-ca78-11ea-8091-aa532e8c15ad.gif)
 
 We implemented all of the easing curves from [easings.net](https://easings.net/) and recommend you check out that website for an interactive, animated explanation of all the different curves and directions.
 
