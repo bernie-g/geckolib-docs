@@ -22,7 +22,7 @@ Each Animation Controller can only play one animation at a time, however you can
 ## Animation Builders
 Animation Builders follow the builder pattern. This means that every method returns an instance of this class. You can stack method calls, like this: 
 ```java
-AnimationBuilder jumpAnimationBuilder = new AnimationBuilder().addAnimation("jump").addRepeatingAnimation("run", 5");
+AnimationBuilder jumpAnimationBuilder = new AnimationBuilder().addAnimation("jump").addRepeatingAnimation("run", "5");
 jumpController.setAnimation(jumpAnimationBuilder);
 ```
 
