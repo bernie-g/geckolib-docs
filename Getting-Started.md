@@ -73,7 +73,9 @@ If you have already created a bedrock or normal java entity, you can convert it 
 ## Animating
 You can animate your model in the Animation tab on the right. Geckolib currently supports position, scale, and rotation keyframes. Support for sound, particle, and custom event keyframes is in development. It's also important that you set the loop setting to the appropriate value for each animation in the editor. This will determine if the animation will loop in game. You can set this value by right-clicking the animation in the Animation Pane and selecting loop.
 
-Animating in GeckoLib is almost exactly the same as how you would animate for a bedrock entity. There are currently no GeckoLib specific video tutorials, but you can watch this bedrock animation [tutorial](https://www.youtube.com/watch?v=eVYCXVzkp1Q) instead.
+Animating in GeckoLib is almost exactly the same as how you would animate for a bedrock entity. There are currently no GeckoLib specific video tutorials, but you can watch this bedrock animation [tutorial](https://www.youtube.com/watch?v=eVYCXVzkp1Q) instead:
+
+[![How to animate on blockbench for Minecraft Bedrock Edition](http://img.youtube.com/vi/eVYCXVzkp1Q/0.jpg)](http://www.youtube.com/watch?v=eVYCXVzkp1Q "How to animate on blockbench for Minecraft Bedrock Edition")
 
 ## Animation Concepts
 Ideally, animations should be split up as much as possible. Geckolib allows you to run multiple animations simultaneously, so in order to make the smoothest transitions, you should split up each logical animation. For example, if you're making a flying creature with several flying types, several running types, and several head movements, you should split each one into it's own animation and combine them in code. 
