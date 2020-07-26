@@ -26,7 +26,7 @@ repositories {
 }
 
 dependencies {
-    implementation fg.deobf('com.github.bernie-g:geckolib:1.15-2.0.0-beta')
+    implementation fg.deobf('com.github.bernie-g:forge-1.15.2-geckolib-2.0.0-beta.5')
 }
 ```
 
