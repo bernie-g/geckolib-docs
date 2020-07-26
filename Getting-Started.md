@@ -45,6 +45,28 @@ dependencies {
 }
 ```
 
+For Fabric 1.15.2:
+```gradle
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    modImplementation "com.github.bernie-g:geckolib:fabric-1.15.2-geckolib-2.0.0-beta.5"
+}
+```
+
+For Fabric 1.16.1:
+```gradle
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    modImplementation "com.github.bernie-g:geckolib:fabric-1.16.1-geckolib-2.0.0-beta.5"
+}
+```
+
 ## Installing the Plugin
 In order to use blockbench (bedrock) animations in forge, you'll need to install the Geckolib blockbench plugin. You can find it by going to File -> Plugins -> Available -> Search for _"GeckoLib Animation Utils"_. Keep in mind the plugin is only available for BlockBench 3.6+, so make sure to fix it.
 
