@@ -99,12 +99,17 @@ The rig for a model is like a skeleton. Groups are the bones, pivots are the joi
 
 Unless your model has multiple objects parts that can move independently, you probably want a single root group with many nested child groups. When each group moves, it also moves it's children.
 
+[![009-Parenting](https://user-images.githubusercontent.com/110764/88625203-22a50f00-d05d-11ea-9324-27bc82905482.png)](https://twitter.com/MasterianoX/status/1183125065250099200?s=19)
+
 Pivot points can be set using the pivot tool and affect what point a group pivots from when it rotates.
 
-This is easier to explain visually so you can [watch this video showing how to set up parenting and pivots](https://eliot.s3.amazonaws.com/media/games/minecraft/blockbench/rigging.mov) for a simple skeleton.
+[![016-Pivot-Points](https://user-images.githubusercontent.com/110764/88625350-6f88e580-d05d-11ea-8eb2-8cfdff740a88.png)](https://twitter.com/MasterianoX/status/1191089175681998848)
 
+This is easier to explain visually so you can [watch this video showing how to set up parenting and pivots](https://eliot.s3.amazonaws.com/media/games/minecraft/blockbench/rigging.mov) for a simple skeleton:
 
 [![Rigging Demo Video](https://user-images.githubusercontent.com/110764/88624641-3308ba00-d05c-11ea-8524-af9b720e8528.png)](https://eliot.s3.amazonaws.com/media/games/minecraft/blockbench/rigging.mov)
+
+These images are from the article [Minecraft Modeling & Texturing Tips by MasterianoX](https://blockbench.net/2019/10/02/minecraft-modeling-texturing-tips/). You can read it for more detail and lots more helpful modeling tips.
 
 ## Animating
 You can animate your model in the Animation tab on the right. Geckolib currently supports position, scale, and rotation keyframes. Support for sound, particle, and custom event keyframes is in development. It's also important that you set the loop setting to the appropriate value for each animation in the editor. This will determine if the animation will loop in game. You can set this value by right-clicking the animation in the Animation Pane and selecting loop.
