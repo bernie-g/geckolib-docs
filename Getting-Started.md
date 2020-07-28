@@ -80,6 +80,22 @@ In order to create a model compatible with Geckolib, you should create a new Ani
 ## Converting an Existing Model
 If you have already created a bedrock or normal java entity, you can convert it to an Animated Entity Model compatible with Geckolib by going to File -> Convert Project -> Select _"Animated Java Entity"_. Keep in mind that if you're converting from a bedrock model to a java model, there are occasionally hiccups in the model conversion process since the models are stored in different file formats. You'll have to either fix these issues manually or consult the blockbench discord.
 
+## Rigging
+The process of preparing a model for animation is known as "rigging". You can think of it as the process of creating a skeleton for your model. Spending a little time rigging makes the animation process much easier.
+
+### Grouping
+In entity models, you cannot rotate cubes, only groups. So, click the "add group" button and make sure all your cubes are inside group "folders":
+![Screen_Shot_2020-06-14_at_8 50 54_PM2](https://user-images.githubusercontent.com/110764/88623282-7b72a880-d059-11ea-9754-954428b481ab.png)
+
+## Parenting and Pivots
+The rig for a model is like a skeleton. Groups are the bones, pivots are the joints, and cubes are the muscles.
+
+Unless your model has multiple objects parts that can move independently, you probably want a single root group with many nested child groups. When each group moves, it also moves it's children.
+
+Pivot points can be set using the pivot tool and affect what point a group pivots from when it rotates.
+
+This is easier to explain visually so you can [watch this video showing how to set up parenting and pivots](https://eliot.s3.amazonaws.com/media/games/minecraft/blockbench/rigging.mov) for a simple skeleton.
+
 ## Animating
 You can animate your model in the Animation tab on the right. Geckolib currently supports position, scale, and rotation keyframes. Support for sound, particle, and custom event keyframes is in development. It's also important that you set the loop setting to the appropriate value for each animation in the editor. This will determine if the animation will loop in game. You can set this value by right-clicking the animation in the Animation Pane and selecting loop.
 
