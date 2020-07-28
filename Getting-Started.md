@@ -92,6 +92,7 @@ The process of preparing a model for animation is known as "rigging". You can th
 
 ### Grouping
 In entity models, you cannot rotate cubes, only groups. So, click the "add group" button and make sure all your cubes are inside group "folders":
+
 ![Screen_Shot_2020-06-14_at_8 50 54_PM2](https://user-images.githubusercontent.com/110764/88623282-7b72a880-d059-11ea-9754-954428b481ab.png)
 
 ## Parenting and Pivots
