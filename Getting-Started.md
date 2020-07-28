@@ -5,8 +5,10 @@
    * [Getting Started](#getting-started)
       * [Installing](#installing)
       * [Installing the Plugin](#installing-the-plugin)
+      * [Video Tutorial](#video-tutorial)
       * [Creating a Model](#creating-a-model)
       * [Converting an Existing Model](#converting-an-existing-model)
+      * [Rigging](#rigging)
       * [Animating](#animating)
       * [Animation Concepts](#animation-concepts)
       * [(2.0) Working with easing curves](#20-working-with-easing-curves)
@@ -72,6 +74,11 @@ In order to use blockbench (bedrock) animations in forge, you'll need to install
 
 ![blockbench plugin](https://i.softwarelocker.net/CIPrU7.png)
 
+## Video Tutorial
+If you prefer videos to written documentation, TurtyWurty made a great [Geckolib 2.0 Tutorial](https://youtu.be/iu2L-LNi8gs) to walk you through how to rig, animate, and code:
+
+[![Minecraft Modding Tutorial 1.15 | Entity Animations](http://img.youtube.com/vi/iu2L-LNi8gs/0.jpg)](https://youtu.be/iu2L-LNi8gs "Minecraft Modding Tutorial 1.15 | Entity Animations")
+
 ## Creating a Model
 In order to create a model compatible with Geckolib, you should create a new Animated Entity Model in blockbench, by going to File -> New Animated Java Entity.
 
@@ -96,12 +103,13 @@ Pivot points can be set using the pivot tool and affect what point a group pivot
 
 This is easier to explain visually so you can [watch this video showing how to set up parenting and pivots](https://eliot.s3.amazonaws.com/media/games/minecraft/blockbench/rigging.mov) for a simple skeleton.
 
+
+[![Rigging Demo Video](https://user-images.githubusercontent.com/110764/88624641-3308ba00-d05c-11ea-8524-af9b720e8528.png)](https://eliot.s3.amazonaws.com/media/games/minecraft/blockbench/rigging.mov)
+
 ## Animating
 You can animate your model in the Animation tab on the right. Geckolib currently supports position, scale, and rotation keyframes. Support for sound, particle, and custom event keyframes is in development. It's also important that you set the loop setting to the appropriate value for each animation in the editor. This will determine if the animation will loop in game. You can set this value by right-clicking the animation in the Animation Pane and selecting loop.
 
-Animating in GeckoLib is almost exactly the same as how you would animate for a bedrock entity. TurtyWurty made a great [Geckolib 2.0 Tutorial](https://youtu.be/iu2L-LNi8gs) to walk you through how to rig, animate, and code:
-
-[![Minecraft Modding Tutorial 1.15 | Entity Animations](http://img.youtube.com/vi/iu2L-LNi8gs/0.jpg)](https://youtu.be/iu2L-LNi8gs "Minecraft Modding Tutorial 1.15 | Entity Animations")
+Animating in GeckoLib is almost exactly the same as how you would animate for a bedrock entity, so most bedrock animation tutorials also apply to GeckoLib.
 
 ## Animation Concepts
 Ideally, animations should be split up as much as possible. Geckolib allows you to run multiple animations simultaneously, so in order to make the smoothest transitions, you should split up each logical animation. For example, if you're making a flying creature with several flying types, several running types, and several head movements, you should split each one into it's own animation and combine them in code. 
