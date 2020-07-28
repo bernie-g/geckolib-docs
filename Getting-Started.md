@@ -97,7 +97,7 @@ In entity models, you cannot rotate cubes, only groups. So, click the "add group
 ## Parenting and Pivots
 The rig for a model is like a skeleton. Groups are the bones, pivots are the joints, and cubes are the muscles.
 
-Unless your model has multiple objects parts that can move independently, you probably want a single root group with many nested child groups. When each group moves, it also moves it's children.
+Unless your model has multiple object parts that can move independently (like if your entity was a school of fish), you probably want a single root group with many nested child groups. When each group moves, it also moves it's children.
 
 [![009-Parenting](https://user-images.githubusercontent.com/110764/88625203-22a50f00-d05d-11ea-9324-27bc82905482.png)](https://twitter.com/MasterianoX/status/1183125065250099200?s=19)
 
