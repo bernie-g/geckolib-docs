@@ -54,7 +54,7 @@ repositories {
 }
 
 dependencies {
-    modImplementation "com.github.bernie-g:geckolib:fabric-1.15.2-geckolib-2.0.0-beta.5"
+    modImplementation "com.github.bernie-g:geckolib:fabric-1.15.2-geckolib-2.0.0"
 }
 ```
 
@@ -65,7 +65,7 @@ repositories {
 }
 
 dependencies {
-    modImplementation "com.github.bernie-g:geckolib:fabric-1.16.1-geckolib-2.0.0-beta.5"
+    modImplementation "com.github.bernie-g:geckolib:fabric-1.16.1-geckolib-2.0.0"
 }
 ```
 
