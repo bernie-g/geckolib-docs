@@ -24,11 +24,23 @@ To use the library in a dev environment, add this to your build.gradle file. For
 For Forge 1.15.2:
 ```gradle
 repositories {
-    maven { url 'https://jitpack.io' }
+    maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
 }
 
 dependencies {
-    implementation fg.deobf('com.github.bernie-g:geckolib:forge-1.15.2-geckolib-2.0.0-beta.7')
+    deobfCompile('software.bernie.geckolib:forge-1.15.2-geckolib:2.0.0')
+}
+```
+
+
+For Forge 1.16.1:
+```gradle
+repositories {
+    maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
+}
+
+dependencies {
+    deobfCompile('software.bernie.geckolib:forge-1.16.1-geckolib:2.0.0')
 }
 ```
 
@@ -39,11 +51,11 @@ minecraft {
 }
 
 repositories {
-    maven { url 'https://jitpack.io' }
+    maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
 }
 
 dependencies {
-    implementation 'com.github.bernie-g:geckolib:1.0.0-1.12'
+    deobfCompile('software.bernie.geckolib:forge-1.12.2-geckolib:2.0.1')
 }
 ```
 
