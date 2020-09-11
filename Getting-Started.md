@@ -55,7 +55,7 @@ repositories {
 }
 
 dependencies {
-    deobfCompile('software.bernie.geckolib:forge-1.12.2-geckolib:2.0.1')
+    deobfCompile('software.bernie.geckolib:forge-1.12.2-geckolib:2.0.2')
 }
 ```
 
