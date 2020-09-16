@@ -62,22 +62,22 @@ dependencies {
 For Fabric 1.15.2:
 ```gradle
 repositories {
-    maven { url 'https://jitpack.io' }
+    maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
 }
 
 dependencies {
-    modImplementation "com.github.bernie-g:geckolib:fabric-1.15.2-geckolib-2.0.0"
+    modImplementation "software.bernie.geckolib:fabric-1.15.2-geckolib:2.1.0"
 }
 ```
 
-For Fabric 1.16.1:
+For Fabric 1.16.2:
 ```gradle
 repositories {
-    maven { url 'https://jitpack.io' }
+    maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
 }
 
 dependencies {
-    modImplementation "com.github.bernie-g:geckolib:fabric-1.16.1-geckolib-2.0.0"
+    modImplementation "software.bernie.geckolib:fabric-1.16.2-geckolib:2.0.0"
 }
 ```
 
