@@ -40,7 +40,7 @@ repositories {
 }
 
 dependencies {
-    implementation fg.deobf('software.bernie.geckolib:forge-1.16.2-geckolib:2.1.1')
+    implementation fg.deobf('software.bernie.geckolib:forge-1.16.3-geckolib:2.1.1')
 }
 ```
 
