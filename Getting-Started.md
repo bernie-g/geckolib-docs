@@ -33,14 +33,14 @@ dependencies {
 ```
 
 
-For Forge 1.16.2:
+For Forge 1.16.*:
 ```gradle
 repositories {
     maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
 }
 
 dependencies {
-    implementation fg.deobf('software.bernie.geckolib:forge-1.16.2-geckolib:2.1.0')
+    implementation fg.deobf('software.bernie.geckolib:forge-1.16.2-geckolib:2.1.1')
 }
 ```
 
