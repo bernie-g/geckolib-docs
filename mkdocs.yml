@@ -15,6 +15,6 @@ extra:
 
 theme:
   name: material
-  custom_dir: theme/mkdocs-material/material
+  custom_dir: theme/material
 
 
