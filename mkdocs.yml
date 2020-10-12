@@ -1,0 +1,14 @@
+# If you add a page, you must add it to the index here
+nav:
+  - Home: 'index.md'
+  - Getting Started:
+      - Examples: 'Examples.md'
+
+# Do not edit in PRs below here
+site_name: GeckoLib Documentation
+
+extra:
+  current_version: 1.15.x
+  versions:
+    1.15.x: 1.15.x
+    1.16.x: 1.16.x
