@@ -19,7 +19,7 @@
 ## Installing
 
 To use the library in a dev environment, add this to your build.gradle file. For forge users, you _have to make a new repositories block_. Otherwise, your build will fail. **Do not add the repository to the buildscript section of your gradle.**
-
+ 
 
 For Forge 1.15.2:
 ```gradle
