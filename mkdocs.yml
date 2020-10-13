@@ -1,15 +1,19 @@
 # If you add a page, you must add it to the index here
 nav:
-  - Getting Started: 'index.md'
-  - Animations:
-      - Using Your Animations: 'Using-Your-Animations.md'
-      - Animation Controllers: 'Animation-Controllers.md'
-      - Animation Managers: 'Animation-Managers.md'
-      - Sounds, Particles, and Custom Keyframes: 'Sounds,-Particles,-and-Custom-Instruction-Keyframes.md'
-      - Examples: 'Examples.md'
-  - Miscellaneous Features: 'Miscellaneous-Features.md'
-  - Troubleshooting: 'Troubleshooting.md'
-  - Credits: 'Credits.md'
+  - About:
+      - About: 'index.md'
+  - Docs:
+      - Animations:
+          - Using Your Animations: 'documentation/Using-Your-Animations.md'
+          - Animation Controllers: 'documentation/Animation-Controllers.md'
+          - Animation Managers: 'documentation/Animation-Managers.md'
+          - Sounds, Particles, and Custom Keyframes: 'documentation/Sounds,-Particles,-and-Custom-Instruction-Keyframes.md'
+          - Examples: 'documentation/Examples.md'
+      - Features:
+          - Miscellaneous Features: 'documentation/Miscellaneous-Features.md'
+          - Troubleshooting: 'documentation/Troubleshooting.md'
+          - Credits: 'documentation/Credits.md'
+
 
 # Do not edit in PRs below here
 site_name: ' '
@@ -17,12 +21,12 @@ site_name: ' '
 theme:
   name: material
   custom_dir: theme/material/overrides
-  palette:
-    primary: green
-  font:
-     code: Consolas
+  font: false
   favicon: 'images/favicon.png'
-  logo: 'images/geckolib.png'
+  logo: 'images/geckolib_webtitle.png'
+  features:
+    - navigation.tabs
+    - navigation.expand
 
 extra_css:
   - 'stylesheet/extra_stylesheet.css'
@@ -30,5 +34,7 @@ extra_css:
 markdown_extensions:
   - pymdownx.inlinehilite
   - codehilite:
-        guess_lang: false
-        use_pygments: true
+      guess_lang: false
+      use_pygments: true
+      linenums: true
+

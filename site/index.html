@@ -1,0 +1,532 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
+    
+    
+      
+        <title> </title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.38780c08.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.3f72e892.min.css">
+        
+      
+    
+    
+    
+      
+    
+    
+    
+      <link rel="stylesheet" href="stylesheet/extra_stylesheet.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#installing" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="." title=" " class="md-header-nav__button md-logo" aria-label=" ">
+      
+  <img src="images/geckolib_webtitle.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+             
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Getting Started
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title=" " class="md-nav__button md-logo" aria-label=" ">
+      
+  <img src="images/geckolib_webtitle.png" alt="logo">
+
+    </a>
+     
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="." class="md-nav__link md-nav__link--active">
+      Getting Started
+    </a>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Animations
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Animations" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Animations
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Using-Your-Animations/" class="md-nav__link">
+      Using Your Animations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Animation-Controllers/" class="md-nav__link">
+      Animation Controllers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Animation-Managers/" class="md-nav__link">
+      Animation Managers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Sounds%2C-Particles%2C-and-Custom-Instruction-Keyframes/" class="md-nav__link">
+      Sounds, Particles, and Custom Keyframes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Examples/" class="md-nav__link">
+      Examples
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="Miscellaneous-Features/" class="md-nav__link">
+      Miscellaneous Features
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="Troubleshooting/" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="Credits/" class="md-nav__link">
+      Credits
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="installing">Installing</h1>
+<p>To use the library in a dev environment, add this to your build.gradle file. For forge users, you <em>have to make a new repositories block</em>. Otherwise, your build will fail. <strong>Do not add the repository to the buildscript section of your gradle.</strong></p>
+<p>For Forge 1.15.2:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">repositories</span> <span class="o">{</span>
+    <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://repo.repsy.io/mvn/gandiber/geckolib&#39;</span> <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="n">dependencies</span> <span class="o">{</span>
+    <span class="n">implementation</span> <span class="n">fg</span><span class="o">.</span><span class="na">deobf</span><span class="o">(</span><span class="s1">&#39;software.bernie.geckolib:forge-1.15.2-geckolib:2.0.0&#39;</span><span class="o">)</span>
+<span class="o">}</span>
+</code></pre></div>
+
+<p>For Forge 1.16.*:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">repositories</span> <span class="o">{</span>
+    <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://repo.repsy.io/mvn/gandiber/geckolib&#39;</span> <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="n">dependencies</span> <span class="o">{</span>
+    <span class="n">implementation</span> <span class="n">fg</span><span class="o">.</span><span class="na">deobf</span><span class="o">(</span><span class="s1">&#39;software.bernie.geckolib:forge-1.16.3-geckolib:2.1.1&#39;</span><span class="o">)</span>
+<span class="o">}</span>
+</code></pre></div>
+
+<p>For Forge 1.12.2:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">minecraft</span> <span class="o">{</span>
+    <span class="n">useDepAts</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="o">}</span>
+
+<span class="n">repositories</span> <span class="o">{</span>
+    <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://repo.repsy.io/mvn/gandiber/geckolib&#39;</span> <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="n">dependencies</span> <span class="o">{</span>
+    <span class="n">deobfCompile</span><span class="o">(</span><span class="s1">&#39;software.bernie.geckolib:forge-1.12.2-geckolib:2.0.2&#39;</span><span class="o">)</span>
+<span class="o">}</span>
+</code></pre></div>
+
+<p>For Fabric 1.15.2:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">repositories</span> <span class="o">{</span>
+    <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://repo.repsy.io/mvn/gandiber/geckolib&#39;</span> <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="n">dependencies</span> <span class="o">{</span>
+    <span class="n">modImplementation</span> <span class="s2">&quot;software.bernie.geckolib:fabric-1.15.2-geckolib:2.0.0:dev&quot;</span>
+<span class="o">}</span>
+</code></pre></div>
+
+<p>For Fabric 1.16.2:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">repositories</span> <span class="o">{</span>
+    <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://repo.repsy.io/mvn/gandiber/geckolib&#39;</span> <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="n">dependencies</span> <span class="o">{</span>
+    <span class="n">modImplementation</span> <span class="s2">&quot;software.bernie.geckolib:fabric-1.16.2-geckolib:2.0.0:dev&quot;</span>
+<span class="o">}</span>
+</code></pre></div>
+
+<h1 id="installing-the-plugin">Installing the Plugin</h1>
+<p>In order to use blockbench (bedrock) animations in forge, you'll need to install the Geckolib blockbench plugin. You can find it by going to File -&gt; Plugins -&gt; Available -&gt; Search for <em>"GeckoLib Animation Utils"</em>. Keep in mind the plugin is only available for BlockBench 3.6+, so make sure to fix it.</p>
+<p><img alt="blockbench plugin" src="https://i.softwarelocker.net/CIPrU7.png" /></p>
+<h1 id="video-tutorial">Video Tutorial</h1>
+<p>If you prefer videos to written documentation, TurtyWurty made a great <a href="https://youtu.be/iu2L-LNi8gs">Geckolib 2.0 Tutorial</a> to walk you through how to rig, animate, and code:</p>
+<p><a href="https://youtu.be/iu2L-LNi8gs" title="Minecraft Modding Tutorial 1.15 | Entity Animations"><img alt="Minecraft Modding Tutorial 1.15 | Entity Animations" src="http://img.youtube.com/vi/iu2L-LNi8gs/0.jpg" /></a></p>
+<h1 id="creating-a-model">Creating a Model</h1>
+<p>In order to create a model compatible with Geckolib, you should create a new Animated Entity Model in blockbench, by going to File -&gt; New Animated Java Entity.</p>
+<p><img alt="" src="https://i.softwarelocker.net/CQ3git.png" /></p>
+<h1 id="converting-an-existing-model">Converting an Existing Model</h1>
+<p>If you have already created a bedrock or normal java entity, you can convert it to an Animated Entity Model compatible with Geckolib by going to File -&gt; Convert Project -&gt; Select <em>"Animated Java Entity"</em>. Keep in mind that if you're converting from a bedrock model to a java model, there are occasionally hiccups in the model conversion process since the models are stored in different file formats. You'll have to either fix these issues manually or consult the blockbench discord.</p>
+<h1 id="rigging">Rigging</h1>
+<p>The process of preparing a model for animation is known as "rigging". You can think of it as the process of creating a skeleton for your model. Spending a little time rigging makes the animation process much easier.</p>
+<h2 id="grouping">Grouping</h2>
+<p>In entity models, you cannot rotate cubes, only groups. So, click the "add group" button and make sure all your cubes are inside group "folders":</p>
+<p><img src="https://user-images.githubusercontent.com/110764/88623282-7b72a880-d059-11ea-9754-954428b481ab.png" width="300"></p>
+<h1 id="parenting-and-pivots">Parenting and Pivots</h1>
+<p>The rig for a model is like a skeleton. Groups are the bones, pivots are the joints, and cubes are the flesh.</p>
+<p>Unless your model has multiple object parts that can move independently (like if your entity was a school of fish), you probably want a single root group with many nested child groups. When each group moves, it also moves it's children.</p>
+<p><a href="https://twitter.com/MasterianoX/status/1183125065250099200?s=19"><img alt="009-Parenting" src="https://user-images.githubusercontent.com/110764/88625203-22a50f00-d05d-11ea-9324-27bc82905482.png" /></a></p>
+<p>Pivot points can be set using the pivot tool and affect what point a group pivots from when it rotates.</p>
+<p><a href="https://twitter.com/MasterianoX/status/1191089175681998848"><img alt="016-Pivot-Points" src="https://user-images.githubusercontent.com/110764/88625350-6f88e580-d05d-11ea-8eb2-8cfdff740a88.png" /></a></p>
+<p>This is easier to explain visually so you can <a href="https://eliot.s3.amazonaws.com/media/games/minecraft/blockbench/rigging.mov">watch this video showing how to set up parenting and pivots</a> for a simple skeleton:</p>
+<p><a href="https://eliot.s3.amazonaws.com/media/games/minecraft/blockbench/rigging.mov"><img alt="Rigging Demo Video" src="https://user-images.githubusercontent.com/110764/88624641-3308ba00-d05c-11ea-8524-af9b720e8528.png" /></a></p>
+<p>These images are from the article <a href="https://blockbench.net/2019/10/02/minecraft-modeling-texturing-tips/">Minecraft Modeling &amp; Texturing Tips by MasterianoX</a>. You can read it for more detail and lots more helpful modeling tips.</p>
+<h1 id="animating">Animating</h1>
+<p>You can animate your model in the Animation tab on the right. Geckolib currently supports position, scale, and rotation keyframes. Support for sound, particle, and custom event keyframes is in development. It's also important that you set the loop setting to the appropriate value for each animation in the editor. This will determine if the animation will loop in game. You can set this value by right-clicking the animation in the Animation Pane and selecting loop.</p>
+<p>Animating in GeckoLib is almost exactly the same as how you would animate for a bedrock entity, so most bedrock animation tutorials also apply to GeckoLib.</p>
+<h1 id="animation-concepts">Animation Concepts</h1>
+<p>Ideally, animations should be split up as much as possible. Geckolib allows you to run multiple animations simultaneously, so in order to make the smoothest transitions, you should split up each logical animation. For example, if you're making a flying creature with several flying types, several running types, and several head movements, you should split each one into it's own animation and combine them in code. </p>
+<p>In this example, you should make these animations in blockbench (examples):
+* Default Head Movement Animation
+* Spitting Head Animation
+* Wing Flapping Animation (only involving wings)
+* Faster Wing Flapping Animation (only involving wings)
+* Running Animation (only involving legs)
+* Walking Animation (only involving legs)</p>
+<p>This is different to the normal way most people animate. Usually, you would animate the entire body at once and duplicate it + adjust keyframes. This can certainly work, but it will provide for a less seamless transition period in between animations. Additionally, the modular system Geckolib encourages allows for more possible animation combinations and a greater control for the developer.</p>
+<h1 id="20-working-with-easing-curves">(2.0) Working with easing curves</h1>
+<p>GeckoLib 2.0 added a powerful new feature called easing curves. These allow you to create smooth, natural-looking animations with less effort than previously.</p>
+<p>In Bedrock and GeckoLib 1.0, the only type of "tweening" or interpolation that could be used between keyframes was linear interpolation, or "lerp". This means that as time progresses forwards, the value would change from the starting keyframe to the next keyframe at a constant speed. Real objects don't usually move in this way, they tend to need to accelerate a bit when starting and decelerate when stopping.</p>
+<p>An easing curve is a mathematical function that can allow for animations to be interpolated in a more gradual fashion. The value of the "tween" at any given point in time is taken from the given easing curve rather than a straight line. This allows you to easily achieve effects like a smooth start and stop, an object overshooting its destination and sliding back into place (back curve), or an object bouncing (bounce curve).</p>
+<p><img alt="Easing Curves Animated Diagram" src="https://64.media.tumblr.com/5944bcf4f7fe9c0c99f7a593f233731a/tumblr_mj7bx09MDo1s5nl47o2_r1_500.gifv" /></p>
+<p><em>Source: <a href="https://1ucasvb.tumblr.com/post/44666043888/easing-functions-are-an-immensely-useful-tool-for">1ucasvb</a>. Note some curve names differ from ours but the principles are the same.</em></p>
+<p>In addition, there are three directions a curve can be applied. "In" usually means the curve is applied focusing on the beginning of the interpolation, focusing on a smooth-looking start. "Out" usually means the curve is applied focusing on the end of the interpolation (the reverse of "In"), focusing on a smooth-looking end. "InOut" means the curve is symmetrically applied to both the start and end. In the animation above, when the animation plays from left to right it corresponds to "In", and when it plays backwards/right to left it corresponds to "Out". See below for a comparison:</p>
+<p><img alt="easing-directions" src="https://user-images.githubusercontent.com/110764/87970177-38706e00-ca78-11ea-8091-aa532e8c15ad.gif" /></p>
+<p><em>Source: <a href="https://prototypr.io/news/animation-easing-functions-explained/">Prototypr</a></em></p>
+<p>We implemented all of the easing curves from <a href="https://easings.net/">easings.net</a> and recommend you check out that website for an interactive, animated explanation of all the different curves and directions.</p>
+<p>We also added a default "linear" curve to emulate bedrock behavior, and a "step" curve which snaps the value to a specified number of steps instead of moving smoothly. This can be used to animate things like clock hands or simulate a reduced framerate.</p>
+<p><img alt="step-demo" src="https://user-images.githubusercontent.com/110764/87971479-43c49900-ca7a-11ea-9369-35acc5c350bf.gif" /></p>
+<p>In addition, we created arguments for the "back", "elastic", and "bounce" curves to give you additional control over their shapes.</p>
+<p>In GeckoLib, we use the right-hand or "to" keyframe to specify the easing for each tween. Therefore, there is no easing curve on the first keyframe in any timeline. You need to <strong>make a second keyframe in order to assign an easing curve</strong>.</p>
+<p>Eliot also made <a href="https://editor.p5js.org/fadookie/present/rUp_FBuLn">a code sandbox to explore the different curves</a> and see the effect of the adjustment parameters for ones that have them. Feel free to play around with it if you find it helpful.</p>
+<p>Here's a short demo of how to use the easing curves editor:
+<img alt="easing-tutorial1" src="https://user-images.githubusercontent.com/110764/87967505-c39b3500-ca73-11ea-910c-65d72c772ccb.gif" /></p>
+<h1 id="exporting-your-model">Exporting Your Model</h1>
+<p>After you finish making your model in Blockbench, you need to export both the .java entity model and the .json animation file. You can export the model by going to File -&gt; Export -&gt; Export Animated Java Entity. You can export the animation json file by going to Animation -&gt; Export Animations</p>
+<h2 id="20-animated-entity-settings-window">(2.0) Animated Entity Settings Window</h2>
+<p>GeckoLib 2.0 added an <code>Animated Entity Settings</code> Window which can be accessed from the <code>File</code> menu for Animated Java Entity projects:</p>
+<p><img width="231" alt="Screen Shot 2020-07-20 at 10 38 53 AM" src="https://user-images.githubusercontent.com/110764/87968463-4ffa2780-ca75-11ea-9f41-a8320c3efd3e.png"></p>
+<p>This can be used to customize the Java code template so that you can export many times if needed without having to manually edit the code afterwards. These settings are completely optional, you can just edit the code by hand still if you prefer.</p>
+<p><img width="550" alt="Screen Shot 2020-07-20 at 9 39 56 AM" src="https://user-images.githubusercontent.com/110764/87968351-22ad7980-ca75-11ea-9ae3-2abb49ae0cdf.png"></p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Modding SDK</td>
+<td>Choose which Modding SDK and version you are using so code will be generated in the correct format.</td>
+</tr>
+<tr>
+<td>Entity Type</td>
+<td>The fully qualified type name of your Entity which will be supplied as the type parameter to the model's superclass, <code>AnimatedEntityModel</code>, ex. <code>com.example.mymod.entities.MyEntity</code></td>
+</tr>
+<tr>
+<td>Java Package</td>
+<td>The Java package you want your model to be in, ex. <code>com.example.mymod.models</code></td>
+</tr>
+<tr>
+<td>Animation File Namespace</td>
+<td>The namespace where your animation file resource is in. This should probably be your mod ID, ex. <code>mymod</code>.</td>
+</tr>
+<tr>
+<td>Animation File Path</td>
+<td>The path to the animation file inside the namespace, ex. <code>animations/my_animation.json</code>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="read-next">Read Next</h2>
+<p>To add your model and animation in game, read how to do so <a href="https://github.com/bernie-g/geckolib/wiki/Using-Your-Animations">here.</a></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+        
+          <a href="Using-Your-Animations/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Using Your Animations
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: ".",
+          features: [],
+          search: Object.assign({
+            worker: "assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,52 @@
+:root {
+  --md-primary-fg-color:        white;
+  --md-primary-fg-color--light: #4CC31E;
+  --md-primary-fg-color--dark:  white;
+  --md-primary-header-color: #171232;
+  --md-primary-background-color: #282052;
+}
+.md-header-nav__button.md-logo img{
+  height: initial !important;
+  width: 280px !important;
+  padding: 0.1rem;
+}
+.md-header-nav__button.md-logo{
+  padding: 0.2rem;
+}
+.md-header{
+  height: 4rem;
+  background-color: var(--md-primary-header-color);
+}
+.md-header-nav__title {
+  line-height: 3rem;
+}
+.md-search__inner{
+  padding: 1rem 0;
+}
+
+.md-main{
+  background-color: var(--md-primary-background-color);
+}
+.md-nav__link, p, .md-nav__link[data-md-state="blur"]{
+  color: white;
+}
+h1, h2, h3, h4, h5, h6, ::marker, .md-nav__title, .md-nav__item--nested {
+  color: var(--md-primary-fg-color--light) !important;
+}
+
+.md-sidebar--primary{
+  background-color: #211B43;
+}
+
+@font-face {
+  font-family: "GravityFont" !important;
+  src: local("GravityFont"), url('/fonts/Gravity-Bold.woff') format("woff");
+  font-weight: auto;
+  font-style: auto;
+}
+*, body, input {
+  font-family: "GravityFont" !important;
+  font-feature-settings: initial !important;
+}
+
+

@@ -1,0 +1,471 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
+    
+    
+      
+        <title>Using Your Animations -  </title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.38780c08.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f72e892.min.css">
+        
+      
+    
+    
+    
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheet/extra_stylesheet.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#adding-animated-entities-into-your-mod" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title=" " class="md-header-nav__button md-logo" aria-label=" ">
+      
+  <img src="../images/geckolib_webtitle.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+             
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Using Your Animations
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title=" " class="md-nav__button md-logo" aria-label=" ">
+      
+  <img src="../images/geckolib_webtitle.png" alt="logo">
+
+    </a>
+     
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Animations
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Animations" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Animations
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Using Your Animations
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Animation-Controllers/" class="md-nav__link">
+      Animation Controllers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Animation-Managers/" class="md-nav__link">
+      Animation Managers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sounds%2C-Particles%2C-and-Custom-Instruction-Keyframes/" class="md-nav__link">
+      Sounds, Particles, and Custom Keyframes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Examples/" class="md-nav__link">
+      Examples
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Miscellaneous-Features/" class="md-nav__link">
+      Miscellaneous Features
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Troubleshooting/" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Credits/" class="md-nav__link">
+      Credits
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="adding-animated-entities-into-your-mod">Adding Animated Entities Into Your Mod</h1>
+<h1 id="base-setup">Base Setup</h1>
+<p>Adding an entity with GeckoLib is very similar to how you would normally do it in a forge mod. You need to create a model, renderer, and entity class, register the entity using either a deferred registry or the normal registry events, and register the renderer using <code class="highlight"><span class="n">RenderingRegistry</span><span class="p">.</span><span class="na">registerEntityRenderingHandler</span><span class="p">()</span></code>, or your mod loader's equivalent.</p>
+<h1 id="model">Model</h1>
+<p>GeckoLib requires some extra stuff in the model class than the usual things you would do in forge. First, you add the exported .java model into your mod, and add all the required imports/replace the entity names with your own entity. The GeckoLib blockbench plugin also generates the <code class="highlight"><span class="n">getAnimationFileLocation</span><span class="p">()</span></code> method, where you should replace the ResourceLocation with a path to your json animation file (exported from blockbench).</p>
+<h1 id="renderer">Renderer</h1>
+<p>Every entity needs it's own renderer, and GeckoLib makes no changes to how EntityRenderer's work. Here is an example EntityRenderer from GeckoLib's test entities:</p>
+<div class="codehilite"><pre><span></span><code><span class="nd">@OnlyIn</span><span class="p">(</span><span class="n">Dist</span><span class="p">.</span><span class="na">CLIENT</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">TigrisRenderer</span> <span class="kd">extends</span> <span class="n">MobRenderer</span><span class="o">&lt;</span><span class="n">TigrisEntity</span><span class="p">,</span> <span class="n">TigrisModel</span><span class="o">&gt;</span>
+<span class="p">{</span>
+    <span class="kd">public</span> <span class="nf">TigrisRenderer</span><span class="p">(</span><span class="n">EntityRendererManager</span> <span class="n">rendererManager</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">rendererManager</span><span class="p">,</span> <span class="k">new</span> <span class="n">TigrisModel</span><span class="p">(),</span> <span class="mf">0.5F</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Nullable</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">ResourceLocation</span> <span class="nf">getEntityTexture</span><span class="p">(</span><span class="n">TigrisEntity</span> <span class="n">entity</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="n">ResourceLocation</span><span class="p">(</span><span class="s">&quot;geckolib&quot;</span> <span class="o">+</span> <span class="s">&quot;:textures/model/entity/tigris.png&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">applyRotations</span><span class="p">(</span><span class="n">TigrisEntity</span> <span class="n">entityLiving</span><span class="p">,</span> <span class="n">MatrixStack</span> <span class="n">matrixStackIn</span><span class="p">,</span> <span class="kt">float</span> <span class="n">ageInTicks</span><span class="p">,</span> <span class="kt">float</span> <span class="n">rotationYaw</span><span class="p">,</span> <span class="kt">float</span> <span class="n">partialTicks</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kd">super</span><span class="p">.</span><span class="na">applyRotations</span><span class="p">(</span><span class="n">entityLiving</span><span class="p">,</span> <span class="n">matrixStackIn</span><span class="p">,</span> <span class="n">ageInTicks</span><span class="p">,</span> <span class="n">rotationYaw</span><span class="p">,</span> <span class="n">partialTicks</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h2 id="entity">Entity</h2>
+<p>The entity class is where most of the animation controlling code will be located. There are several things you need to do to the entity class in order to get up and running with GeckoLib:</p>
+<ol>
+<li>Implement <code>IAnimatedEntity</code></li>
+<li>Create a field of type <code>EntityAnimationManager</code>. To learn more about animation manager's see <a href="https://github.com/bernie-g/geckolib/wiki/Animation-Managers">the wiki page</a></li>
+<li>Create as many <code>EntityAnimationController</code>'s as you need, declaring each as a field.</li>
+<li>Override <code>getAnimationManager()</code>, and return your <code>EntityAnimationManager</code>.</li>
+<li>Create a method <code>registerAnimationControllers()</code> where you add all your <code>EntityAnimationController</code>s to your <code>EntityAnimationManager</code>, and <strong>call this method in the entity constructor.</strong> If you don't call this method in the constructor, none of your animations will play.</li>
+</ol>
+<h3 id="animation-predicates">Animation Predicates</h3>
+<p>Every render frame, GeckoLib will process every <code>EntityAnimationController</code> and execute it's associated <code>AnimationPredicate</code>. An Animation Predicate is where you should set your animations, stop them, and transition between them. Feel free to run the <code>AnimationController#setAnimation()</code> method every tick, it won't restart the animation unless you change the Animation being run. Additionally, if you want to stop the animation from executing, you'll need to <code>return false</code>. If you want the animation to continue executing, <code>return true</code>. Keep in mind, if you return false, GeckoLib won't instantly stop the animation. Instead, the bones <strong>will slowly interpolate back to the model's original state</strong>. You can read more about this behavior <a href="https://github.com/bernie-g/geckolib/wiki/Animation-Managers#changing-reset-speeds">here.</a></p>
+<h3 id="example-entity-class">Example Entity Class</h3>
+<div class="codehilite"><pre><span></span><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">RobotEntity</span> <span class="kd">extends</span> <span class="n">AnimalEntity</span> <span class="kd">implements</span> <span class="n">IAnimatedEntity</span>
+<span class="p">{</span>
+    <span class="n">EntityAnimationManager</span> <span class="n">manager</span> <span class="o">=</span> <span class="k">new</span> <span class="n">EntityAnimationManager</span><span class="p">();</span>
+    <span class="n">EntityAnimationController</span> <span class="n">controller</span> <span class="o">=</span> <span class="k">new</span> <span class="n">EntityAnimationController</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="s">&quot;walkController&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="k">this</span><span class="p">::</span><span class="n">animationPredicate</span><span class="p">);</span>
+
+    <span class="kd">private</span> <span class="o">&lt;</span><span class="n">E</span> <span class="kd">extends</span> <span class="n">Entity</span><span class="o">&gt;</span> <span class="kt">boolean</span> <span class="nf">animationPredicate</span><span class="p">(</span><span class="n">AnimationTestEvent</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;</span> <span class="n">event</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">controller</span><span class="p">.</span><span class="na">setAnimation</span><span class="p">(</span><span class="k">new</span> <span class="n">AnimationBuilder</span><span class="p">().</span><span class="na">addAnimation</span><span class="p">(</span><span class="s">&quot;walk&quot;</span><span class="p">));</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="nf">RobotEntity</span><span class="p">(</span><span class="n">EntityType</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">AnimalEntity</span><span class="o">&gt;</span> <span class="n">type</span><span class="p">,</span> <span class="n">World</span> <span class="n">worldIn</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">type</span><span class="p">,</span> <span class="n">worldIn</span><span class="p">);</span>
+        <span class="n">manager</span><span class="p">.</span><span class="na">addAnimationController</span><span class="p">(</span><span class="n">controller</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Nullable</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">AgeableEntity</span> <span class="nf">createChild</span><span class="p">(</span><span class="n">AgeableEntity</span> <span class="n">ageable</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">EntityAnimationManager</span> <span class="nf">getAnimationManager</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="n">manager</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href=".." class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Getting Started
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../Animation-Controllers/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Animation Controllers
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
