@@ -4,7 +4,7 @@ There are several instances where you'll want to override parts of an animation 
 ## Overriding Looping
 There are three places you can change this setting. Listed in priority of highest to lowest:
 1. `AnimationController#loopByDefault`
-2. `animatinoBuilder.addAnimation("animation", true)` where true represents that the animation should loop
+2. `animationBuilder.addAnimation("animation", true)` where true represents that the animation should loop
 3. `"loop" = true` in the animation json file. This can be configured in blockbench by right clicking your animation and selecting loop.
 
 This image explains how GeckoLib determines if an animation should loop.
@@ -21,4 +21,4 @@ If for some reason you want to make a completely new easing curve that isn't inc
 GeckoLib provides a simple command to hot swap animation files. Simply change your animation file, rebuild your project in your IDE, and execute `/geckolib reload`
 
 # Sounds
-GeckoLib has [support ](https://github.com/bernie-g/geckolib/wiki/Sounds,-Particles,-and-Custom-Instruction-Keyframes#sound-keyframes) for sound keyframes from blockbench. To adjust the volume, pitch, and distance delay of the sounds played, adjust the fields in your AnimationController.
+GeckoLib has [support ](/documentation/Sounds,-Particles,-and-Custom-Instruction-Keyframes#sound-keyframes) for sound keyframes from blockbench. To adjust the volume, pitch, and distance delay of the sounds played, adjust the fields in your AnimationController.

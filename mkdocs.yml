@@ -1,8 +1,9 @@
 # If you add a page, you must add it to the index here
 nav:
-  - About:
-      - About: 'index.md'
-  - Docs:
+  - Home:
+      - Home: 'index.md'
+  - Documentation:
+      - Getting Started: 'documentation/index.md'
       - Animations:
           - Using Your Animations: 'documentation/Using-Your-Animations.md'
           - Animation Controllers: 'documentation/Animation-Controllers.md'
@@ -13,11 +14,11 @@ nav:
           - Miscellaneous Features: 'documentation/Miscellaneous-Features.md'
           - Troubleshooting: 'documentation/Troubleshooting.md'
           - Credits: 'documentation/Credits.md'
-
-
+repo_name: GeckoLib
+repo_url: https://github.com/bernie-g/geckolib
 # Do not edit in PRs below here
 site_name: ' '
-
+edit_uri: ""
 theme:
   name: material
   custom_dir: theme/material/overrides

@@ -38,13 +38,13 @@ public class TigrisRenderer extends MobRenderer<TigrisEntity, TigrisModel>
 The entity class is where most of the animation controlling code will be located. There are several things you need to do to the entity class in order to get up and running with GeckoLib:
 
 1. Implement `IAnimatedEntity`
-2. Create a field of type `EntityAnimationManager`. To learn more about animation manager's see [the wiki page](https://github.com/bernie-g/geckolib/wiki/Animation-Managers)
+2. Create a field of type `EntityAnimationManager`. To learn more about animation manager's see [the wiki page](/documentation/Animation-Managers)
 3. Create as many `EntityAnimationController`'s as you need, declaring each as a field.
 4. Override `getAnimationManager()`, and return your `EntityAnimationManager`.
 5. Create a method `registerAnimationControllers()` where you add all your `EntityAnimationController`s to your `EntityAnimationManager`, and **call this method in the entity constructor.** If you don't call this method in the constructor, none of your animations will play.
 
 ### Animation Predicates
-Every render frame, GeckoLib will process every `EntityAnimationController` and execute it's associated `AnimationPredicate`. An Animation Predicate is where you should set your animations, stop them, and transition between them. Feel free to run the `AnimationController#setAnimation()` method every tick, it won't restart the animation unless you change the Animation being run. Additionally, if you want to stop the animation from executing, you'll need to `return false`. If you want the animation to continue executing, `return true`. Keep in mind, if you return false, GeckoLib won't instantly stop the animation. Instead, the bones **will slowly interpolate back to the model's original state**. You can read more about this behavior [here.](https://github.com/bernie-g/geckolib/wiki/Animation-Managers#changing-reset-speeds)
+Every render frame, GeckoLib will process every `EntityAnimationController` and execute it's associated `AnimationPredicate`. An Animation Predicate is where you should set your animations, stop them, and transition between them. Feel free to run the `AnimationController#setAnimation()` method every tick, it won't restart the animation unless you change the Animation being run. Additionally, if you want to stop the animation from executing, you'll need to `return false`. If you want the animation to continue executing, `return true`. Keep in mind, if you return false, GeckoLib won't instantly stop the animation. Instead, the bones **will slowly interpolate back to the model's original state**. You can read more about this behavior [here.](/documentation/Animation-Managers#changing-reset-speeds)
 
 ### Example Entity Class
 ```java

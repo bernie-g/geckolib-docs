@@ -13,14 +13,8 @@
     <label class="md-header-nav__button md-icon" for="__drawer">
       {% include ".icons/material/menu" ~ ".svg" %}
     </label>
-    {% include "partials/tabs.html" %}
-    <a id="discord_icon_box" href="https://discord.com/invite/MNQcKxB" title="{{ config.site_name | e }}" class="md-header-nav__button md-logo" aria-label="{{ config.site_name }}">
-      <img id="discord_icon" src="/images/discord_logo.png" alt="logo">
-    </a>
 
-    <a id="curseforge_icon_box" href="https://www.curseforge.com/minecraft/mc-mods/geckolib" title="{{ config.site_name | e }}" class="md-header-nav__button md-logo" aria-label="{{ config.site_name }}">
-      <img id="curseforge_icon" src="/images/curseforge_icon.png" alt="logo">
-    </a>
+
     {% if "search" in config["plugins"] %}
       <label class="md-header-nav__button md-icon" for="__search">
         {% include ".icons/material/magnify.svg" %}
@@ -32,5 +26,12 @@
         {% include "partials/source.html" %}
       </div>
     {% endif %}
+    <a id="discord_icon_box" href="https://discord.com/invite/MNQcKxB" title="{{ config.site_name | e }}" class="md-header-nav__button md-logo" aria-label="{{ config.site_name }}">
+      <img id="discord_icon" src="https://i.softwarelocker.net/discord_logo.png" alt="logo">
+    </a>
+
+    <a id="curseforge_icon_box" href="https://www.curseforge.com/minecraft/mc-mods/geckolib" title="{{ config.site_name | e }}" class="md-header-nav__button md-logo" aria-label="{{ config.site_name }}">
+      <img id="curseforge_icon" src="https://i.softwarelocker.net/curseforge_icon.png" alt="logo">
+    </a>
   </nav>
 </header>
