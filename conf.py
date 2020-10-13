@@ -1,0 +1,1 @@
+html_favicon = 'favicon.png'

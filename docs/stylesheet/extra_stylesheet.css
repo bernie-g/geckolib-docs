@@ -1,0 +1,17 @@
+.md-header-nav__button.md-logo img{
+  height: initial !important;
+  width: 170px !important;
+  padding: 0.1rem;
+}
+.md-header-nav__button.md-logo{
+  padding: 0.2rem;
+}
+.md-header{
+  height: 3rem;
+}
+.md-header-nav__title {
+  line-height: 3rem;
+}
+.md-search__inner{
+  padding: .35rem 0;
+}

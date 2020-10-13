@@ -22,7 +22,7 @@ To use the library in a dev environment, add this to your build.gradle file. For
  
 
 For Forge 1.15.2:
-```gradle
+```groovy
 repositories {
     maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
 }
@@ -34,7 +34,7 @@ dependencies {
 
 
 For Forge 1.16.*:
-```gradle
+```groovy
 repositories {
     maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
 }
@@ -45,7 +45,7 @@ dependencies {
 ```
 
 For Forge 1.12.2:
-```gradle
+```groovy
 minecraft {
     useDepAts = true
 }
@@ -60,7 +60,7 @@ dependencies {
 ```
 
 For Fabric 1.15.2:
-```gradle
+```groovy
 repositories {
     maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
 }
@@ -71,7 +71,7 @@ dependencies {
 ```
 
 For Fabric 1.16.2:
-```gradle
+```groovy
 repositories {
     maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
 }

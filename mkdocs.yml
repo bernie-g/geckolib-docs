@@ -1,20 +1,34 @@
 # If you add a page, you must add it to the index here
 nav:
-  - Home: 'index.md'
-  - Getting Started:
+  - Getting Started: 'Getting-Started.md'
+  - Animations:
+      - Using Your Animations: 'Using-Your-Animations.md'
+      - Animation Controllers: 'Animation-Controllers.md'
+      - Animation Managers: 'Animation-Managers.md'
+      - Sounds, Particles, and Custom Keyframes: 'Sounds,-Particles,-and-Custom-Instruction-Keyframes.md'
       - Examples: 'Examples.md'
+  - Miscellaneous Features: 'Miscellaneous-Features.md'
+  - Troubleshooting: 'Troubleshooting.md'
+  - Credits: 'Credits.md'
 
 # Do not edit in PRs below here
-site_name: GeckoLib Documentation
-
-extra:
-  current_version: 1.15.x
-  versions:
-    1.15.x: 1.15.x
-    1.16.x: 1.16.x
+site_name: ' '
 
 theme:
   name: material
-  custom_dir: theme/material
+  custom_dir: theme/material/overrides
+  palette:
+    primary: green
+  font:
+     code: Consolas
+  favicon: 'images/favicon.png'
+  logo: 'images/geckolib.png'
 
+extra_css:
+  - 'stylesheet/extra_stylesheet.css'
 
+markdown_extensions:
+  - pymdownx.inlinehilite
+  - codehilite:
+        guess_lang: false
+        use_pygments: true

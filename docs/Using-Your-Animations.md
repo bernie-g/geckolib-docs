@@ -1,11 +1,11 @@
 # Adding Animated Entities Into Your Mod
 
 # Base Setup
-Adding an entity with GeckoLib is very similar to how you would normally do it in a forge mod. You need to create a model, renderer, and entity class, register the entity using either a deferred registry or the normal registry events, and register the renderer using `RenderingRegistry.registerEntityRenderingHandler`, or your mod loader's equivalent.
+Adding an entity with GeckoLib is very similar to how you would normally do it in a forge mod. You need to create a model, renderer, and entity class, register the entity using either a deferred registry or the normal registry events, and register the renderer using `#!java RenderingRegistry.registerEntityRenderingHandler()`, or your mod loader's equivalent.
 
 # Model
 
-GeckoLib requires some extra stuff in the model class than the usual things you would do in forge. First, you add the exported .java model into your mod, and add all the required imports/replace the entity names with your own entity. The GeckoLib blockbench plugin also generates the `getAnimationFileLocation()` method, where you should replace the ResourceLocation with a path to your json animation file (exported from blockbench).
+GeckoLib requires some extra stuff in the model class than the usual things you would do in forge. First, you add the exported .java model into your mod, and add all the required imports/replace the entity names with your own entity. The GeckoLib blockbench plugin also generates the `#!java getAnimationFileLocation()` method, where you should replace the ResourceLocation with a path to your json animation file (exported from blockbench).
 
 # Renderer
 Every entity needs it's own renderer, and GeckoLib makes no changes to how EntityRenderer's work. Here is an example EntityRenderer from GeckoLib's test entities:
