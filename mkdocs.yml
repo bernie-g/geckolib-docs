@@ -1,6 +1,6 @@
 # If you add a page, you must add it to the index here
 nav:
-  - Getting Started: 'Getting-Started.md'
+  - Getting Started: 'index.md'
   - Animations:
       - Using Your Animations: 'Using-Your-Animations.md'
       - Animation Controllers: 'Animation-Controllers.md'
