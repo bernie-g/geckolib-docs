@@ -177,4 +177,4 @@ This can be used to customize the Java code template so that you can export many
 
 
 ## Read Next
-To add your model and animation in game, read how to do so [here.](/documentation/Using-Your-Animations)
+To add your model and animation in game, read how to do so [here.](Using-Your-Animations)

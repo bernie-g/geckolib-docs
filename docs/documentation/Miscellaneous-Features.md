@@ -21,4 +21,4 @@ If for some reason you want to make a completely new easing curve that isn't inc
 GeckoLib provides a simple command to hot swap animation files. Simply change your animation file, rebuild your project in your IDE, and execute `/geckolib reload`
 
 # Sounds
-GeckoLib has [support ](/documentation/Sounds,-Particles,-and-Custom-Instruction-Keyframes#sound-keyframes) for sound keyframes from blockbench. To adjust the volume, pitch, and distance delay of the sounds played, adjust the fields in your AnimationController.
+GeckoLib has [support ](Sounds,-Particles,-and-Custom-Instruction-Keyframes#sound-keyframes) for sound keyframes from blockbench. To adjust the volume, pitch, and distance delay of the sounds played, adjust the fields in your AnimationController.
