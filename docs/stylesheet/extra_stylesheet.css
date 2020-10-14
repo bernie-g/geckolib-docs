@@ -83,8 +83,13 @@ h1, h2, h3, h4, h5, h6, ::marker, .md-nav__title, .md-nav__item--nested {
 }
 
 
-*, body, input {
-    font-family: "GravityBold" !important;
+:not(span), body, input {
+    font-family: "GravityBold";
+    font-feature-settings: initial !important;
+}
+
+code, .md-typeset, .codehilitetable, .codehilite{
+    font-family: "Consolas" !important;
     font-feature-settings: initial !important;
 }
 
