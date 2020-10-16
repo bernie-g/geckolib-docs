@@ -2,7 +2,7 @@
 nav:
   - Home:
       - Home: 'index.md'
-  - Documentation:
+  - 2.0.0 Documentation:
       - Getting Started: 'documentation/index.md'
       - Animations:
           - Using Your Animations: 'documentation/Using-Your-Animations.md'
@@ -14,6 +14,9 @@ nav:
           - Miscellaneous Features: 'documentation/Miscellaneous-Features.md'
           - Troubleshooting: 'documentation/Troubleshooting.md'
           - Credits: 'documentation/Credits.md'
+  - 3.0.0 Documentation:
+      - Installation: '3.0.0/index.md'
+
 repo_name: GeckoLib
 repo_url: https://github.com/bernie-g/geckolib
 # Do not edit in PRs below here
@@ -35,6 +38,7 @@ extra_css:
 
 markdown_extensions:
   - pymdownx.inlinehilite
+  - pymdownx.tabbed
   - codehilite:
       guess_lang: false
       use_pygments: true
