@@ -1,5 +1,6 @@
-GeckoLib 3.0.0 is currently in alpha. **Do not use this version of geckolib in production, a released mod, or anywhere that can't handle unexpected crashes**. Moreover, this version is only available on Forge 1.15.2, and there is no jar released on the curseforge page.
- 
+!!! warning
+    GeckoLib 3.0.0 is currently in alpha. **Do not use this version of geckolib in production, a released mod, or anywhere that can't handle unexpected crashes**. Moreover, this version is only available on Forge 1.15.2, and there is no jar released on the curseforge page.
+
  
 # Installation
 ## GeckoLib Library

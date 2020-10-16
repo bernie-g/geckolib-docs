@@ -1,77 +1,5 @@
-# Installing
-To use the library in a dev environment, add this to your build.gradle file. For forge users, you _have to make a new repositories block_. Otherwise, your build will fail. **Do not add the repository to the buildscript section of your gradle.**
- 
-
-=== "Forge 1.15.2"
-    ``` groovy
-    repositories {
-        maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
-    }
-    
-    dependencies {
-        implementation fg.deobf('software.bernie.geckolib:forge-1.15.2-geckolib:2.0.0')
-    }
-    ```
-    
-=== "Forge 1.16.3"
-    ``` groovy
-    repositories {
-        maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
-    }
-    
-    dependencies {
-        implementation fg.deobf('software.bernie.geckolib:forge-1.16.3-geckolib:2.1.1')
-    }
-    ```
-=== "Forge 1.12.2"
-    ```groovy
-    minecraft {
-        useDepAts = true
-    }
-    
-    repositories {
-        maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
-    }
-    
-    dependencies {
-        deobfCompile('software.bernie.geckolib:forge-1.12.2-geckolib:2.0.2')
-    }
-    ```
-=== "Fabric 1.15.2"
-    ```groovy
-    repositories {
-        maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
-    }
-    
-    dependencies {
-        modImplementation "software.bernie.geckolib:fabric-1.15.2-geckolib:2.0.0:dev"
-    }
-    ```
-
-=== "Fabric 1.16.3"
-    ```groovy
-    repositories {
-        maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
-    }
-    
-    dependencies {
-        modImplementation "software.bernie.geckolib:fabric-1.16.2-geckolib:2.0.0:dev"
-    }
-    ```
-
-# Installing the Plugin
-In order to use blockbench (bedrock) animations in forge, you'll need to install the Geckolib blockbench plugin. You can find it by going to File -> Plugins -> Available -> Search for _"GeckoLib Animation Utils"_. Keep in mind the plugin is only available for BlockBench 3.6+, so make sure to fix it.
-
-![blockbench plugin](https://i.softwarelocker.net/CIPrU7.png)
-
-# Video Tutorial
-If you prefer videos to written documentation, TurtyWurty made a great [Geckolib 2.0 Tutorial](https://youtu.be/iu2L-LNi8gs) to walk you through how to rig, animate, and code:
-
-[![Minecraft Modding Tutorial 1.15 | Entity Animations](http://img.youtube.com/vi/iu2L-LNi8gs/0.jpg)](https://youtu.be/iu2L-LNi8gs "Minecraft Modding Tutorial 1.15 | Entity Animations")
-
 # Creating a Model
-In order to create a model compatible with Geckolib, you should create a new Animated Entity Model in blockbench, by going to File -> New Animated Java Entity.
-
+To create a new GeckoLib Model, go to 
 ![](https://i.softwarelocker.net/CQ3git.png)
 
 # Converting an Existing Model
@@ -170,8 +98,4 @@ This can be used to customize the Java code template so that you can export many
 | Entity Type              | The fully qualified type name of your Entity which will be supplied as the type parameter to the model's superclass, `AnimatedEntityModel`, ex. `com.example.mymod.entities.MyEntity` |
 | Java Package             | The Java package you want your model to be in, ex. `com.example.mymod.models`                                                                                                         |
 | Animation File Namespace | The namespace where your animation file resource is in. This should probably be your mod ID, ex. `mymod`.                                                                             |
-| Animation File Path      | The path to the animation file inside the namespace, ex. `animations/my_animation.json`.                                                                                              |
-
-
-## Read Next
-To add your model and animation in game, read how to do so [here.](Using-Your-Animations)
+| Animation File Path      | The path to the animation file inside the namespace, ex. `animations/my_animation.json`.
