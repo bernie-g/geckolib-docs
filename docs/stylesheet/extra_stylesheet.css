@@ -177,7 +177,7 @@ a:hover{
     -webkit-mask-image: var(--md-admonition-icon--fabric);
     mask-image: var(--md-admonition-icon--fabric);
 }
-.md-typeset .fabric summary::before{
+.md-typeset .fabric summary::before, .md-typeset .fabric > .admonition-title::before{
     top: 0.5rem;
 }
 .fabric p{

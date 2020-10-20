@@ -29,9 +29,9 @@ public class JackInTheBoxModel extends AnimatedGeoModel<JackInTheBoxItem>
 ```
 
 Each of these methods handles the location of the model, texture, and animation file respectively.
-??? note
+!!! note
     If you want to reuse a model class for say both an entity animation and an item animation, simply remove the generic parameter of AnimatedGeoModel and use the raw type.
-??? fabric
+!!! fabric
     In fabric (yarn), a `ResourceLocation` is called an `Identifier`
 ## Resource Locations
 Your resources cannot go in any directory, otherwise geckolib will not be able to find them during the resource scanning phase. Make sure all your resources are in the correct folder. The reason this is strict is so that geckolib can load your models at runtime and make it easier for people overriding your models/animations in resource packs.
