@@ -1,28 +1,6 @@
 # Installing
 To use the library in a dev environment, add this to your build.gradle file. For forge users, you _have to make a new repositories block_. Otherwise, your build will fail. **Do not add the repository to the buildscript section of your gradle.**
  
-
-=== "Forge 1.15.2"
-    ``` groovy
-    repositories {
-        maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
-    }
-    
-    dependencies {
-        implementation fg.deobf('software.bernie.geckolib:forge-1.15.2-geckolib:2.0.0')
-    }
-    ```
-    
-=== "Forge 1.16.3"
-    ``` groovy
-    repositories {
-        maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
-    }
-    
-    dependencies {
-        implementation fg.deobf('software.bernie.geckolib:forge-1.16.3-geckolib:2.1.1')
-    }
-    ```
 === "Forge 1.12.2"
     ```groovy
     minecraft {
@@ -34,7 +12,27 @@ To use the library in a dev environment, add this to your build.gradle file. For
     }
     
     dependencies {
-        deobfCompile('software.bernie.geckolib:forge-1.12.2-geckolib:2.0.2')
+        deobfCompile('{{ version_info_2.forge_1_12 }}')
+    }
+    ```
+=== "Forge 1.15.2"
+    ``` groovy
+    repositories {
+        maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
+    }
+    
+    dependencies {
+        implementation fg.deobf('{{ version_info_2.forge_1_15 }}')
+    }
+    ```
+=== "Forge 1.16.3"
+    ``` groovy
+    repositories {
+        maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
+    }
+    
+    dependencies {
+        implementation fg.deobf('{{ version_info_2.forge_1_16 }}')
     }
     ```
 === "Fabric 1.15.2"
@@ -44,10 +42,9 @@ To use the library in a dev environment, add this to your build.gradle file. For
     }
     
     dependencies {
-        modImplementation "software.bernie.geckolib:fabric-1.15.2-geckolib:2.0.0:dev"
+        modImplementation '{{ version_info_2.fabric_1_15 }}'
     }
     ```
-
 === "Fabric 1.16.3"
     ```groovy
     repositories {
@@ -55,7 +52,7 @@ To use the library in a dev environment, add this to your build.gradle file. For
     }
     
     dependencies {
-        modImplementation "software.bernie.geckolib:fabric-1.16.2-geckolib:2.0.0:dev"
+        modImplementation '{{ version_info_2.fabric_1_16 }}'
     }
     ```
 

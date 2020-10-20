@@ -16,6 +16,23 @@ nav:
           - Credits: 'documentation/Credits.md'
   - 3.0.0 Documentation:
       - Installation: '3.0.0/index.md'
+      - Getting Started: '3.0.0/getting_started.md'
+      - Model Classes: '3.0.0/models.md'
+      - Animation Types:
+          - Entity Animations: '3.0.0/entity_animations.md'
+          - Block Animations: '3.0.0/todo.md'
+          - Item Animations: '3.0.0/todo.md'
+          - Armor Animations: '3.0.0/todo.md'
+      - Animation Basics: '3.0.0/the_basics.md'
+      - Sounds, Particles, and Events: '3.0.0/todo.md'
+      - Custom Model Providers: '3.0.0/todo.md'
+      - Custom Renderers: '3.0.0/todo.md'
+      - Miscellaneous Topics: '3.0.0/todo.md'
+      - Upgrading from GeckoLib 2.0.0: '3.0.0/todo.md'
+      - Examples: '3.0.0/todo.md'
+      - FAQs: '3.0.0/todo.md'
+      - Contributing: '3.0.0/todo.md'
+      - Roadmap: '3.0.0/todo.md'
 
 repo_name: GeckoLib
 repo_url: https://github.com/bernie-g/geckolib
@@ -40,9 +57,26 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.tabbed
   - pymdownx.superfences
+  - pymdownx.details
   - admonition
   - codehilite:
       guess_lang: false
       use_pygments: true
       linenums: true
+  - attr_list
+plugins:
+  - macros
+  - search
+
+
+# Variables used to determine the most updated gradle snippet for each geckolib version. These update in the docs automatically
+extra:
+  version_info_2:
+      forge_1_12: 'software.bernie.geckolib:forge-1.12.2-geckolib:2.0.2'
+      forge_1_15: 'software.bernie.geckolib:forge-1.15.2-geckolib:2.0.0'
+      forge_1_16: 'software.bernie.geckolib:forge-1.16.3-geckolib:2.1.1'
+      fabric_1_15: 'software.bernie.geckolib:fabric-1.15.2-geckolib:2.0.0:dev'
+      fabric_1_16: 'software.bernie.geckolib:fabric-1.16.2-geckolib:2.0.0:dev'
+  version_info_3:
+      forge_1_15: 'software.bernie.geckolib:forge-1.15.2-geckolib:3.0.0-alpha.1'
 

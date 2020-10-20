@@ -6,7 +6,8 @@
     --md-primary-background-color: #1f1c23;
     --md-default-fg-color--light: #526cfe;
     --md-accent-fg-color: #4CC31E;
-}
+    --md-admonition-bg-color: #1F1C23;
+    --md-admonition-icon--fabric: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M48 0C21.53 0 0 21.53 0 48v64c0 8.84 7.16 16 16 16h80V48C96 21.53 74.47 0 48 0zm208 412.57V352h288V96c0-52.94-43.06-96-96-96H111.59C121.74 13.41 128 29.92 128 48v368c0 38.87 34.65 69.65 74.75 63.12C234.22 474 256 444.46 256 412.57zM288 384v32c0 52.93-43.06 96-96 96h336c61.86 0 112-50.14 112-112 0-8.84-7.16-16-16-16H288z"/></svg>')}
 .md-tabs{
     --md-primary-fg-color: #2d2b32;
 }
@@ -64,6 +65,10 @@
 li, .md-nav__item--nested, .md-nav__link, p, .md-nav__link[data-md-state="blur"] {
     color: white !important;
 }
+.md-search-result__terms
+{
+    color: #6F6F6F !important;
+}
 
 h1, h2, h3, h4, h5, h6, ::marker, .md-nav__title, .md-nav__item--nested {
     color: var(--md-primary-fg-color--light) !important;
@@ -95,7 +100,8 @@ code, .md-typeset, .codehilitetable, .codehilite{
 }
 
 .md-typeset code {
-    background-color: #4D4B57;
+    background-color: #252129;
+    border: black;
 }
 
 .md-search{
@@ -145,11 +151,37 @@ a{
 a:hover{
     color: #556EFE !important;
 }
-p{
-    padding-bottom: 1.5rem;
-}
 
 
-.admonition{
+.admonition.note, details{
     background-color: #252129 !important;
+    color: white !important;
 }
+
+.md-typeset .tabbed-set > label{
+    color: white;
+}
+.highlight pre{
+    border-style: solid;
+    border-width: thin;
+    border-color: #6C72B4;
+}
+
+.md-typeset .admonition.fabric,
+.md-typeset details.fabric {
+    border-color: #DBD0B4;
+    background-color: #252129;
+}
+.md-typeset .fabric > .admonition-title::before, .md-typeset summary::before{
+    background-color: #DBD0B4;
+    -webkit-mask-image: var(--md-admonition-icon--fabric);
+    mask-image: var(--md-admonition-icon--fabric);
+}
+.md-typeset .fabric summary::before{
+    top: 0.5rem;
+}
+.fabric p{
+}
+.fabric summary{
+}
+
