@@ -3,26 +3,26 @@ nav:
   - Home:
       - Home: 'index.md'
   - 2.0.0 Documentation:
-      - Getting Started: 'documentation/index.md'
+      - Getting Started: '2.0.0/index.md'
       - Animations:
-          - Using Your Animations: 'documentation/Using-Your-Animations.md'
-          - Animation Controllers: 'documentation/Animation-Controllers.md'
-          - Animation Managers: 'documentation/Animation-Managers.md'
-          - Sounds, Particles, and Custom Keyframes: 'documentation/Sounds,-Particles,-and-Custom-Instruction-Keyframes.md'
-          - Examples: 'documentation/Examples.md'
+          - Using Your Animations: '2.0.0/Using-Your-Animations.md'
+          - Animation Controllers: '2.0.0/Animation-Controllers.md'
+          - Animation Managers: '2.0.0/Animation-Managers.md'
+          - Sounds, Particles, and Custom Keyframes: '2.0.0/Sounds,-Particles,-and-Custom-Instruction-Keyframes.md'
+          - Examples: '2.0.0/Examples.md'
       - Features:
-          - Miscellaneous Features: 'documentation/Miscellaneous-Features.md'
-          - Troubleshooting: 'documentation/Troubleshooting.md'
-          - Credits: 'documentation/Credits.md'
+          - Miscellaneous Features: '2.0.0/Miscellaneous-Features.md'
+          - Troubleshooting: '2.0.0/Troubleshooting.md'
+          - Credits: '2.0.0/Credits.md'
   - 3.0.0 Documentation:
       - Installation: '3.0.0/index.md'
       - Getting Started: '3.0.0/getting_started.md'
       - Model Classes: '3.0.0/models.md'
       - Animation Types:
           - Entity Animations: '3.0.0/entity_animations.md'
-          - Block Animations: '3.0.0/todo.md'
-          - Item Animations: '3.0.0/todo.md'
-          - Armor Animations: '3.0.0/todo.md'
+          - Block Animations: '3.0.0/block_animations.md'
+          - Item Animations: '3.0.0/item_animations.md'
+          - Armor Animations: '3.0.0/armor_animations.md'
       - Animation Basics: '3.0.0/the_basics.md'
       - Sounds, Particles, and Events: '3.0.0/todo.md'
       - Custom Model Providers: '3.0.0/todo.md'

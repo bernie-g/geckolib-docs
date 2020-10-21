@@ -1,4 +1,7 @@
 # Getting Started
+!!! info
+    This wiki presumes you have a basic understanding of Java, Minecraft, and Forge or Fabric. You'll need to understand how to register objects, read the Minecraft source code, and debug issues on your own. If you don't have these, consider watching [TurtyWurty's](https://www.youtube.com/watch?v=H55ClYTdQEI&list=PLaevjqy3XufYmltqo0eQusnkKVN7MpTUe) or [McJty's](https://wiki.mcjty.eu/modding/index.php?title=YouTube-Tutorials) tutorials.
+
 ## Creating a Model
 To create a new GeckoLib Model, go to `File` -> `New` -> `GeckoLib Animated Model`
 

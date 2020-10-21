@@ -185,3 +185,6 @@ a:hover{
 .fabric summary{
 }
 
+.md-content{
+    max-width: calc(100% - 12.1rem) !important;
+}
