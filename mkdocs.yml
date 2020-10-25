@@ -24,15 +24,18 @@ nav:
           - Item Animations: '3.0.0/item_animations.md'
           - Armor Animations: '3.0.0/armor_animations.md'
       - Animation Basics: '3.0.0/the_basics.md'
-      - Sounds, Particles, and Events: '3.0.0/todo.md'
-      - Custom Model Providers: '3.0.0/todo.md'
-      - Custom Renderers: '3.0.0/todo.md'
-      - Miscellaneous Topics: '3.0.0/todo.md'
-      - Upgrading from GeckoLib 2.0.0: '3.0.0/todo.md'
-      - Examples: '3.0.0/todo.md'
-      - FAQs: '3.0.0/todo.md'
-      - Contributing: '3.0.0/todo.md'
+      - Sounds, Particles, and Events: '3.0.0/effect_keyframes.md'
+      - Molang: '3.0.0/molang.md'
+      - The Bedrock Renderer: '3.0.0/bedrock_renderer.md'
+      - Custom Model Providers: '3.0.0/custom_model_providers.md'
+      - Miscellaneous Topics: '3.0.0/misc.md'
+      - Upgrading from GeckoLib 2.0.0: '3.0.0/upgrading.md'
+      - Examples: '3.0.0/examples.md'
+      - Shadowing: '3.0.0/shadowing.md'
+      - FAQs: '3.0.0/faqs.md'
+      - Contributing: '3.0.0/contributing.md'
       - Roadmap: '3.0.0/todo.md'
+
 
 repo_name: GeckoLib
 repo_url: https://github.com/bernie-g/geckolib
@@ -59,6 +62,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
   - admonition
+  - pymdownx.keys
   - codehilite:
       guess_lang: false
       use_pygments: true
@@ -78,5 +82,5 @@ extra:
       fabric_1_15: 'software.bernie.geckolib:fabric-1.15.2-geckolib:2.0.0:dev'
       fabric_1_16: 'software.bernie.geckolib:fabric-1.16.2-geckolib:2.0.0:dev'
   version_info_3:
-      forge_1_15: 'software.bernie.geckolib:forge-1.15.2-geckolib:3.0.0-alpha.1'
+      forge_1_15: 'software.bernie.geckolib:forge-1.15.2-geckolib:3.0.0-beta.1'
 
