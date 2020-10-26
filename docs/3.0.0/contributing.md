@@ -1,5 +1,5 @@
 # Contributing
-If you'd like to contribute to this wiki, simply clone the [repository](https://github.com/bernie-g/geckolib-core), install [mkdocs](https://www.mkdocs.org/#installation), and run
+If you'd like to contribute to this wiki, simply clone the [repository](https://github.com/bernie-g/geckolib-docs), install [mkdocs](https://www.mkdocs.org/#installation), and run
 
 ```bash
 python -m mkdocs serve
