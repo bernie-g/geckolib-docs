@@ -8,7 +8,7 @@ To create a new GeckoLib Model, go to `File` -> `New` -> `GeckoLib Animated Mode
 To choose your model type, go to `File` -> `GeckoLib Model Settings` and choose your object type.
 
 
-![](https://i.softwarelocker.net/ojjRSn.gif)
+![!](https://i.softwarelocker.net/ojjRSn.gif)
 
 
 ## Converting an Existing Model
@@ -19,12 +19,12 @@ The process of preparing a model for animation is known as "rigging". You can th
 ### Grouping
 Models consist of cubes, and groups. Only groups can be animated, so make sure to place all of your cubes in groups.
 
-<img src="https://user-images.githubusercontent.com/110764/88623282-7b72a880-d059-11ea-9754-954428b481ab.png" width="300">
+![!](https://user-images.githubusercontent.com/110764/88623282-7b72a880-d059-11ea-9754-954428b481ab.png){:width=300}
 
 ## Parenting and Pivots
 The rig for a model is like a skeleton. Groups are the bones, pivots are the joints, and cubes are the flesh.
 ??? tip "MasterianoX Tip!"
-    [![009-Parenting](https://user-images.githubusercontent.com/110764/88625203-22a50f00-d05d-11ea-9324-27bc82905482.png)](https://twitter.com/MasterianoX/status/1183125065250099200?s=19)
+    [![!009-Parenting](https://user-images.githubusercontent.com/110764/88625203-22a50f00-d05d-11ea-9324-27bc82905482.png)](https://twitter.com/MasterianoX/status/1183125065250099200?s=19)
     These images are from the article [Minecraft Modeling & Texturing Tips by MasterianoX](https://blockbench.net/2019/10/02/minecraft-modeling-texturing-tips/). You can read it for more detail and lots more helpful modeling tips.
     
 Unless your model has multiple object parts that can move independently (like if your entity was a school of fish), you probably want a single root group with many nested child groups. When each group moves, it also moves its children.
@@ -33,12 +33,12 @@ Unless your model has multiple object parts that can move independently (like if
 
 Pivot points can be set using the pivot tool and affect what point a group pivots from when it rotates.
 ??? tip "MasterianoX Tip!"
-    [![016-Pivot-Points](https://user-images.githubusercontent.com/110764/88625350-6f88e580-d05d-11ea-8eb2-8cfdff740a88.png)](https://twitter.com/MasterianoX/status/1191089175681998848)
+    [![!016-Pivot-Points](https://user-images.githubusercontent.com/110764/88625350-6f88e580-d05d-11ea-8eb2-8cfdff740a88.png)](https://twitter.com/MasterianoX/status/1191089175681998848)
     These images are from the article [Minecraft Modeling & Texturing Tips by MasterianoX](https://blockbench.net/2019/10/02/minecraft-modeling-texturing-tips/). You can read it for more detail and lots more helpful modeling tips.
 
-This is easier to explain visually so you can [watch this video showing how to set up parenting and pivots](https://eliot.s3.amazonaws.com/media/games/minecraft/blockbench/rigging.mov) for a simple skeleton:
+!!! example
+    This is easier to explain visually so you can [watch this video showing how to set up parenting and pivots](https://eliot.s3.amazonaws.com/media/games/minecraft/blockbench/rigging.mov) for a simple skeleton.
 
-[![Rigging Demo Video](https://user-images.githubusercontent.com/110764/88624641-3308ba00-d05c-11ea-8524-af9b720e8528.png)](https://eliot.s3.amazonaws.com/media/games/minecraft/blockbench/rigging.mov)
 
 
 

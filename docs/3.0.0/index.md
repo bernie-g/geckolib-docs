@@ -6,14 +6,35 @@
 ## Installing the Library
 To install the actual geckolib forge library, insert this dependency snippet into your build.gradle. 
 
-```groovy
-repositories{
-    maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
-}
-dependencies{
-    compile fg.deobf('{{ version_info_3.forge_1_15 }}')
-}
-```
+=== "Forge 1.15.2"
+    ```groovy
+    repositories{
+        maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
+    }
+    dependencies{
+        compile fg.deobf('{{ version_info_3.forge_1_15 }}')
+    }
+    ```
+=== "Forge 1.16.3"
+    ``` groovy
+    repositories {
+        maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
+    }
+    
+    dependencies {
+        implementation fg.deobf('{{ version_info_3.forge_1_16 }}')
+    }
+    ```
+=== "Fabric 1.16.3"
+    ```groovy
+    repositories {
+        maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
+    }
+    
+    dependencies {
+        modImplementation '{{ version_info_3.fabric_1_16 }}'
+    }
+    ```
 
 !!! failure
     Do not put this in your buildscript section!
