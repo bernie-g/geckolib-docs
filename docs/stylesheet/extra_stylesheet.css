@@ -186,5 +186,5 @@ a:hover{
 }
 
 .md-content{
-    max-width: calc(100% - 12.1rem) !important;
+    max-width: 100% !important;
 }
