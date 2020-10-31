@@ -3,6 +3,7 @@ If you'd like to contribute to this wiki, simply clone the [repository](https://
 
 ```bash
 python -m mkdocs serve
+pip install mkdocs-macros-plugin
 ```
 
 You can then access a local version of the site [here](localhost:8000). Once you've finished making your edits, simply PR your changes to the main repo.
