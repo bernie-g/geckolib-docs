@@ -69,6 +69,7 @@ Similarly to Items, make sure to follow the [guidelines when animating singleton
     
     
 ## Creating an Armor Renderer
+
 Out of all the GeoRenderers, `GeoArmorRenderer` requires the most work. After you create your renderer, you need to make sure ever armor bone matches up to the GeckoLib armor bone names. By default, the bones have the same names as the blockbench template, but if you want to modify them, set their names in the constructor.
 
 === "Forge"
@@ -79,7 +80,9 @@ Out of all the GeoRenderers, `GeoArmorRenderer` requires the most work. After yo
     	{
     		super(new PotatoArmorModel());
     
-    		//These values are what each bone name is in blockbench. So if your head bone is named "bone545", make sure to do this.headBone = "bone545";
+    		//These values are what each bone name is in blockbench. So if your head bone is named "bone545", 
+    		// make sure to do this.headBone = "bone545";
+    		
     		// The default values are the ones that come with the default armor template in the geckolib blockbench plugin.
     		this.headBone = "helmet";
     		this.bodyBone = "chestplate";
@@ -101,8 +104,10 @@ Out of all the GeoRenderers, `GeoArmorRenderer` requires the most work. After yo
         {
             super(new PotatoArmorModel());
     
-            //These values are what each bone name is in blockbench. So if your head bone is named "bone545", make sure to do this.headBone = "bone545";
-            // The default values are the ones that come with the default armor template in the geckolib blockbench plugin.
+        	//These values are what each bone name is in blockbench. So if your head bone is named "bone545", 
+        	// make sure to do this.headBone = "bone545";
+        	
+        	// The default values are the ones that come with the default armor template in the geckolib blockbench plugin.
             this.headBone = "helmet";
             this.bodyBone = "chestplate";
             this.rightArmBone = "rightArm";
@@ -114,6 +119,7 @@ Out of all the GeoRenderers, `GeoArmorRenderer` requires the most work. After yo
         }
     }
     ```
+    
 ### Registering the Armor Renderer
 
 === "Forge"
