@@ -1,5 +1,5 @@
 !!! warning
-    GeckoLib 3.0.0 is currently in beta. It is currently only available on Forge 1.15.2, but it will be available on Fabric 1.15.2 soon.
+    GeckoLib 3.0.0 is currently in beta. It is currently only available on Forge 1.15.2, 1.16.4, and Fabric 1.16.4. We are in the process of backporting to 1.12.
 
  
 # Installation
