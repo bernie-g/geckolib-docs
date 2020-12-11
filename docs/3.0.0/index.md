@@ -1,7 +1,3 @@
-!!! warning
-    GeckoLib 3.0.0 is currently in beta. It is currently only available on Forge 1.15.2, 1.16.4, and Fabric 1.16.4. We are in the process of backporting to 1.12.
-
- 
 # Installation
 ## Installing the Library
 To install the actual geckolib forge library, insert this dependency snippet into your build.gradle. 
@@ -70,8 +66,3 @@ To install the alpha blockbench plugin:
     ```
     https://rawcdn.githack.com/fadookie/geckolib-plugin/50a7fdc6a3d41a26d3f9e97e3c1875f24a1ce639/plugins/animation_utils.js
     ```
-=== "Blockbench 3.6"
-    ```
-    https://rawcdn.githack.com/fadookie/geckolib-plugin/30e971d829202882fa11eb3c1e903eefcd3a286a/plugins/animation_utils.js
-    ```
-
