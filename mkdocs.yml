@@ -2,18 +2,6 @@
 nav:
   - Home:
       - Home: 'index.md'
-  - 2.0.0 Documentation:
-      - Getting Started: '2.0.0/index.md'
-      - Animations:
-          - Using Your Animations: '2.0.0/Using-Your-Animations.md'
-          - Animation Controllers: '2.0.0/Animation-Controllers.md'
-          - Animation Managers: '2.0.0/Animation-Managers.md'
-          - Sounds, Particles, and Custom Keyframes: '2.0.0/Sounds,-Particles,-and-Custom-Instruction-Keyframes.md'
-          - Examples: '2.0.0/Examples.md'
-      - Features:
-          - Miscellaneous Features: '2.0.0/Miscellaneous-Features.md'
-          - Troubleshooting: '2.0.0/Troubleshooting.md'
-          - Credits: '2.0.0/Credits.md'
   - 3.0.0 Documentation:
       - Installation: '3.0.0/index.md'
       - Getting Started: '3.0.0/getting_started.md'
@@ -83,7 +71,7 @@ extra:
       fabric_1_15: 'software.bernie.geckolib:fabric-1.15.2-geckolib:2.0.0:dev'
       fabric_1_16: 'software.bernie.geckolib:fabric-1.16.2-geckolib:2.0.0:dev'
   version_info_3:
-      forge_1_15: 'software.bernie.geckolib:forge-1.15.2-geckolib:3.0.0-beta.8'
-      forge_1_16: 'software.bernie.geckolib:forge-1.16.3-geckolib:3.0.0-beta.8'
-      fabric_1_16: 'software.bernie.geckolib:fabric-1.16.3-geckolib:3.0.0-beta.1:dev'
+      forge_1_15: 'software.bernie.geckolib:forge-1.15.2-geckolib:3.0.0'
+      forge_1_16: 'software.bernie.geckolib:forge-1.16.4-geckolib:3.0.0'
+      fabric_1_16: 'software.bernie.geckolib:fabric-1.16.4-geckolib:3.0.0:dev'
 

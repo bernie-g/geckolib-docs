@@ -118,7 +118,8 @@ To register your renderer, place this method call in your `FMLClientSetupEvent` 
     @SubscribeEvent
     public static void registerRenderers(final FMLClientSetupEvent event)
     {
-        RenderingRegistry.registerEntityRenderingHandler(EntityRegistry.GEO_EXAMPLE_ENTITY.get(), manager -> new ExampleGeoRenderer(manager));
+        RenderingRegistry.registerEntityRenderingHandler(EntityRegistry.GEO_EXAMPLE_ENTITY.get(),
+        manager -> new ExampleGeoRenderer(manager));
     }
     ```
 === "Fabric"
@@ -126,7 +127,8 @@ To register your renderer, place this method call in your `FMLClientSetupEvent` 
     @Override
     public void onInitializeClient() 
     {
-        EntityRendererRegistry.INSTANCE.register(EntityRegistry.GEO_EXAMPLE_ENTITY, (entityRenderDispatcher, context) -> new ExampleGeoRenderer(entityRenderDispatcher));
+        EntityRendererRegistry.INSTANCE.register(EntityRegistry.GEO_EXAMPLE_ENTITY, 
+        (entityRenderDispatcher, context) -> new ExampleGeoRenderer(entityRenderDispatcher));
     }
     ```
 
