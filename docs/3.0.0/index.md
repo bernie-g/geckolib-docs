@@ -31,6 +31,15 @@ To install the actual geckolib forge library, insert this dependency snippet int
         modImplementation '{{ version_info_3.fabric_1_16 }}'
     }
     ```
+=== "Forge 1.12.2"
+    ```groovy
+    repositories{
+        maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
+    }
+    dependencies{
+        deobfCompile('{{ version_info_3.forge_1_12 }}')
+    }
+    ```
 
 !!! failure
     Do not put this in your buildscript section!
@@ -50,19 +59,4 @@ To install the actual geckolib forge library, insert this dependency snippet int
         For Fabric, you'll have to do this in your mod's `#!java onInitialize()` method.
 
 ## Installing the BB Plugin
-To install the alpha blockbench plugin:
-
-1. Close any GeckoLib project.
-2. Open `Filter` -> `Plugins Menu`: 
-3. If you have GeckoLib Animation Utils plugin installed already, uninstall it:
-<img width="657" alt="Screen Shot 2020-10-10 at 11 08 25 AM" src="https://user-images.githubusercontent.com/110764/95662060-0441a200-0ae9-11eb-86c0-68df8943b40e.png">
-4. Click `Load Plugin from URL`. 
-    
-    ![image](https://user-images.githubusercontent.com/110764/95662058-0146b180-0ae9-11eb-93c5-3a6887a05c2e.png)
-    
-5. Paste in this URL:
-
-=== "Blockbench 3.7"
-    ```
-    https://rawcdn.githack.com/fadookie/geckolib-plugin/50a7fdc6a3d41a26d3f9e97e3c1875f24a1ce639/plugins/animation_utils.js
-    ```
+To install the blockbench plugin, simply go to `File` -> `Plugins` -> `Available` -> `Install GeckoLib Animation Utils`.
