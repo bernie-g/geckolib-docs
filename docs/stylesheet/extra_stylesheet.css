@@ -74,6 +74,10 @@ h1, h2, h3, h4, h5, h6, ::marker, .md-nav__title, .md-nav__item--nested {
     color: var(--md-primary-fg-color--light) !important;
 }
 
+.md-header-nav {
+	align-items: normal;
+}
+
 .md-tabs__list {
 	height: 50px;
 	line-height: 50px;
