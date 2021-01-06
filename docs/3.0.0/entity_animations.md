@@ -94,6 +94,7 @@ Entity renderers are fairly simple. All you need to do is create a renderer clas
         public ExampleGeoRenderer(EntityRendererManager renderManager)
         {
             super(renderManager, new ExampleEntityModel());
+			this.shadowSize = 0.7F; //change 0.7 to the desired shadow size.
         }
     }
     ```
@@ -104,6 +105,7 @@ Entity renderers are fairly simple. All you need to do is create a renderer clas
     	public ExampleGeoRenderer(EntityRenderDispatcher renderManager)
     	{
     		super(renderManager, new ExampleEntityModel());
+			this.shadowRadius = 0.7F; //change 0.7 to the desired shadow size.
     	}
     }
     ```
