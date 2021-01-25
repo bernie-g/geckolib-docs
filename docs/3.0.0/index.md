@@ -11,7 +11,7 @@ To install the actual geckolib forge library, insert this dependency snippet int
         compile fg.deobf('{{ version_info_3.forge_1_15 }}')
     }
     ```
-=== "Forge 1.16.4"
+=== "Forge 1.16.5"
     ``` groovy
     repositories {
         maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
@@ -21,7 +21,7 @@ To install the actual geckolib forge library, insert this dependency snippet int
         implementation fg.deobf('{{ version_info_3.forge_1_16 }}')
     }
     ```
-=== "Fabric 1.16.4"
+=== "Fabric 1.16.5"
     ```groovy
     repositories {
         maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
