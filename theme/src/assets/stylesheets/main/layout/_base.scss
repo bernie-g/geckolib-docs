@@ -97,7 +97,9 @@ hr {
 }
 
 // Template-wide grid
+// Change by Khazoda 02/03/2021 added display:flex
 .md-grid {
+  display: flex;
   max-width: px2rem(1220px);
   margin-right: auto;
   margin-left: auto;

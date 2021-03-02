@@ -32,6 +32,13 @@
     --md-code-bg-color: #38363f;
     --md-default-fg-color--light: #4CC31E;
 }
+/* Changes by Khazoda 02/03/2021 to fix broken header */
+label.md-header-nav__button.md-icon {
+    display:none;
+}
+.md-header-nav__source {
+    min-width: 200px;
+}
 .md-nav__icon{
     color: var(--md-primary-fg-color--light);
 }
@@ -145,8 +152,9 @@ a{
 }
 .md-header-nav__source{
     position: relative;
-    left: 8rem;
-    top: 50%;
+    /* Khazoda 02/03/2021 Commented out*/
+    /* left: 8rem;
+    top: 50%; */
     padding-top: 0.8rem;
 }
 .md-tabs__link{
