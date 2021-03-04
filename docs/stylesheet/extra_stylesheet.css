@@ -83,6 +83,7 @@ h1, h2, h3, h4, h5, h6, ::marker, .md-nav__title, .md-nav__item--nested {
 
 .md-header-nav {
 	align-items: normal;
+	display: flex;
 }
 
 .md-tabs__list {
