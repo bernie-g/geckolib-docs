@@ -75,5 +75,5 @@ extra:
       forge_1_12: 'software.bernie.geckolib:forge-1.12.2-geckolib:3.0.0-beta.7'
       forge_1_15: 'software.bernie.geckolib:geckolib-forge-1.15.2:3.0.15'
       forge_1_16: 'software.bernie.geckolib:geckolib-forge-1.16.5:3.0.15'
-      fabric_1_16: 'software.bernie.geckolib:geckolib-fabric-1.16.5:3.0.25:dev'
+      fabric_1_16: 'software.bernie.geckolib:geckolib-fabric-1.16.5:3.0.26:dev'
 
