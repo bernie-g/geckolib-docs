@@ -133,4 +133,159 @@ Currently, the only way GeckoLib can identify that two ItemStacks are different 
 
 If you need to control the criteria that GeckoLib uses to determine that two ItemStacks are different, override `#!java getUniqueID` in your `GeoItemRenderer`. You can also override this method for entities, tile entities, and armor, although it's most useful for items and armor. Most people will never need to do this.
 
+### Syncing Item Animations
+
+To register the animations to sync, simply implement [`ISyncable`](https://github.com/bernie-g/geckolib/blob/1.16/src/main/java/software/bernie/geckolib3/network/ISyncable.java). Then, override the necessary methods like below 
+
+
+=== "Forge"
+    ```java
+	public class PistolItem extends Item implements IAnimatable, ISyncable {
+
+		public AnimationFactory factory = new AnimationFactory(this);
+		public String controllerName = "controller";
+		public static final int ANIM_OPEN = 0;
+
+		public PistolItem() {
+			super(new Item.Properties().tab(GeckoLibMod.geckolibItemGroup).stacksTo(1).durability(201)
+					.setISTER(() -> PistolRender::new));
+			// Registers the item to sync
+			GeckoLibNetwork.registerSyncable(this);
+		}
+
+		public <P extends Item & IAnimatable> PlayState predicate(AnimationEvent<P> event) {
+			// this is set below
+			return PlayState.CONTINUE;
+		}
+
+		@SuppressWarnings({ "unchecked", "rawtypes" })
+		@Override
+		public void registerControllers(AnimationData data) {
+			data.addAnimationController(new AnimationController(this, controllerName, 1, this::predicate));
+		}
+
+		@Override
+		public AnimationFactory getFactory() {
+			return this.factory;
+		}
+
+		//This is where will be set the animation  we want to play for our item.
+		@Override
+		public void onAnimationSync(int id, int state) {
+			if (state == ANIM_OPEN) {
+				final AnimationController<?> controller = GeckoLibUtil.getControllerForID(this.factory, id, controllerName);
+				if (controller.getAnimationState() == AnimationState.Stopped) {
+					controller.markNeedsReload();
+					controller.setAnimation(new AnimationBuilder().addAnimation("firing", false));
+				}
+			}
+		}
+		
+		@Override
+		public void releaseUsing(ItemStack stack, World worldIn, LivingEntity entityLiving, int timeLeft) {
+			if (entityLiving instanceof PlayerEntity) {
+				PlayerEntity playerentity = (PlayerEntity) entityLiving;
+				if (stack.getDamageValue() < (stack.getMaxDamage() - 1)) {
+					playerentity.getCooldowns().addCooldown(this, 5);
+					if (!worldIn.isClientSide) {
+						ArrowEntity abstractarrowentity = createArrow(worldIn, stack, playerentity);
+						abstractarrowentity = customeArrow(abstractarrowentity);
+						abstractarrowentity.shootFromRotation(playerentity, playerentity.xRot, playerentity.yRot, 0.0F,
+								1.0F * 3.0F, 1.0F);
+
+						abstractarrowentity.setBaseDamage(2.5);
+						abstractarrowentity.tickCount = 35;
+						abstractarrowentity.isNoGravity();
+
+						stack.hurtAndBreak(1, entityLiving, p -> p.broadcastBreakEvent(entityLiving.getUsedItemHand()));
+						worldIn.addFreshEntity(abstractarrowentity);
+					}
+					//This will send the animation to the other players.
+					if (!worldIn.isClientSide) {	
+						// Gets the item that the player is holding, should be this item.
+						final int id = GeckoLibUtil.guaranteeIDForStack(stack, (ServerWorld) worldIn);
+						// Tell all nearby clients to trigger this item to animate
+						final PacketDistributor.PacketTarget target = PacketDistributor.TRACKING_ENTITY_AND_SELF
+								.with(() -> playerentity);
+						GeckoLibNetwork.syncAnimation(target, this, id, ANIM_OPEN);
+					}
+				}
+			}
+		}
+	}
+    ```
+=== "Fabric"
+    ```java
+	public class PistolItem extends Item implements IAnimatable, ISyncable {
+
+		public AnimationFactory factory = new AnimationFactory(this);
+		public String controllerName = "controller";
+		public static final int ANIM_OPEN = 0;
+
+		public PistolItem() {
+			super(new Item.Settings().group(ItemRegistry.geckolibItemGroup).maxCount(1).maxDamage(201));
+			// Registers the item to sync
+			GeckoLibNetwork.registerSyncable(this);
+		}
+
+		public <P extends Item & IAnimatable> PlayState predicate(AnimationEvent<P> event) {
+			// this is set below
+			return PlayState.CONTINUE;
+		}
+
+		@SuppressWarnings({ "unchecked", "rawtypes" })
+		@Override
+		public void registerControllers(AnimationData data) {
+			data.addAnimationController(new AnimationController(this, controllerName, 1, this::predicate));
+		}
+
+		@Override
+		public AnimationFactory getFactory() {
+			return this.factory;
+		}
+
+		//This is where will be set the animation  we want to play for our item.
+		@Override
+		public void onAnimationSync(int id, int state) {
+			if (state == ANIM_OPEN) {
+				final AnimationController<?> controller = GeckoLibUtil.getControllerForID(this.factory, id, controllerName);
+				if (controller.getAnimationState() == AnimationState.Stopped) {
+					controller.markNeedsReload();
+					controller.setAnimation(new AnimationBuilder().addAnimation("firing", false));
+				}
+			}
+		}
+		
+		@Override
+		public void onStoppedUsing(ItemStack stack, World worldIn, LivingEntity entityLiving, int remainingUseTicks) {
+			if (entityLiving instanceof PlayerEntity) {
+				PlayerEntity playerentity = (PlayerEntity) entityLiving;
+				if (stack.getDamage() < (stack.getMaxDamage() - 1)) {
+					playerentity.getItemCooldownManager().set(this, 5);
+					if (!worldIn.isClient) {
+						ArrowEntity abstractarrowentity = createArrow(worldIn, stack, playerentity);
+						abstractarrowentity.setProperties(playerentity, playerentity.pitch, playerentity.yaw, 0.0F,
+								1.0F * 3.0F, 1.0F);
+
+						abstractarrowentity.setDamage(2.5);
+						abstractarrowentity.age = 35;
+						abstractarrowentity.hasNoGravity();
+
+						stack.damage(1, entityLiving, p -> p.sendToolBreakStatus(entityLiving.getActiveHand()));
+						worldIn.spawnEntity(abstractarrowentity);
+					}
+					if (!worldIn.isClient) {
+						// Gets the item that the player is holding, should be this item.
+						final int id = GeckoLibUtil.guaranteeIDForStack(stack, (ServerWorld) worldIn);
+						GeckoLibNetwork.syncAnimation(playerentity, this, id, ANIM_OPEN);
+						// Tell all nearby clients to trigger this item to animate
+						for (PlayerEntity otherPlayer : PlayerLookup.tracking(playerentity)) {
+							GeckoLibNetwork.syncAnimation(otherPlayer, this, id, ANIM_OPEN);
+						}
+					}
+				}
+			}
+		}
+	}
+    ```
 
