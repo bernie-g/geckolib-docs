@@ -135,7 +135,7 @@ If you need to control the criteria that GeckoLib uses to determine that two Ite
 
 ### Syncing Item Animations
 
-To register the animations to sync, simply implement [`ISyncable`](https://github.com/bernie-g/geckolib/blob/1.16/src/main/java/software/bernie/geckolib3/network/ISyncable.java). Then, override the necessary methods like below 
+To register the animations to sync to other players in servers, simply implement [`ISyncable`](https://github.com/bernie-g/geckolib/blob/1.16/src/main/java/software/bernie/geckolib3/network/ISyncable.java). Then, override the necessary methods like below 
 
 
 === "Forge"
