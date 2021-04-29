@@ -5,7 +5,7 @@ To install the actual geckolib forge library, insert this dependency snippet int
 === "Forge 1.15.2"
     ```groovy
     repositories{
-        maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'' }
+        maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
     }
     dependencies{
         compile fg.deobf('{{ version_info_3.forge_1_15 }}')
@@ -14,7 +14,7 @@ To install the actual geckolib forge library, insert this dependency snippet int
 === "Forge 1.16.5"
     ``` groovy
     repositories {
-        maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'' }
+        maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
     }
     
     dependencies {
@@ -24,7 +24,7 @@ To install the actual geckolib forge library, insert this dependency snippet int
 === "Fabric 1.16.5"
     ```groovy
     repositories {
-        maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'' }
+        maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
     }
     
     dependencies {
@@ -34,7 +34,7 @@ To install the actual geckolib forge library, insert this dependency snippet int
 === "Forge 1.12.2"
     ```groovy
     repositories{
-        maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'' }
+        maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
     }
     dependencies{
         deobfCompile('{{ version_info_3.forge_1_12 }}')
