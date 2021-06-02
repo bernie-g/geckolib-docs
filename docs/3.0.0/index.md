@@ -30,7 +30,8 @@ To install the actual geckolib forge library, insert this dependency snippet int
     dependencies {
         modImplementation '{{ version_info_3.fabric_1_16 }}'
     }
-    ```=== "Fabric 1.16.5"
+    ```
+=== "Fabric 1.17"
     ```groovy
     repositories {
         maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
