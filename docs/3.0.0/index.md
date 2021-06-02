@@ -16,7 +16,6 @@ To install the actual geckolib forge library, insert this dependency snippet int
     repositories {
         maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
     }
-    
     dependencies {
         implementation fg.deobf('{{ version_info_3.forge_1_16 }}')
     }
@@ -26,7 +25,6 @@ To install the actual geckolib forge library, insert this dependency snippet int
     repositories {
         maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
     }
-    
     dependencies {
         modImplementation '{{ version_info_3.fabric_1_16 }}'
     }
@@ -36,7 +34,6 @@ To install the actual geckolib forge library, insert this dependency snippet int
     repositories {
         maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
     }
-    
     dependencies {
         modImplementation '{{ version_info_3.fabric_1_17 }}'
     }
