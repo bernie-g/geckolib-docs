@@ -12,6 +12,7 @@ You will also need to do a few extra steps if shadowing with Forge, instead of [
     GeckoLib.hasInitialized = true;
     DistExecutor.safeRunWhenOn(Dist.CLIENT, () -> ResourceListener::registerReloadListener);
 ```
+
 This is needed as Geckolib now ships with a needed Packet for Item syncing on servers. If you wish to use this feature when shadowing GeckoLib, you will need to create your own Packet based off [GeckoLibNetwork](https://github.com/bernie-g/geckolib/blob/1.16/src/main/java/software/bernie/geckolib3/network/GeckoLibNetwork.java) and [SyncAnimationMsg](https://github.com/bernie-g/geckolib/blob/62137dd37927a3cfe6264499e9c0449afe8ed21f/src/main/java/software/bernie/geckolib3/network/messages/SyncAnimationMsg.java) replacing any calls to GeckoLibNetwork with your own Packet.
 
 When you go to make your Item syncable via the ISyncable system, make sure to use your own Packet in place of these two calls to GeckoLibNetwork.
