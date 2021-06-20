@@ -47,7 +47,7 @@ To render the item with your entity, simply call `renderRecursively` in your ent
             // Change mainHand to predefined Itemstack and TransformType to what transform you would want to use.
 			Minecraft.getInstance().getItemRenderer().renderItem(mainHand, TransformType.THIRD_PERSON_RIGHT_HAND, packedLightIn, packedOverlayIn, stack, this.rtb);
 			stack.pop();
-			bufferIn = rtb.getBuffer(RenderType.getEntitySmoothCutout(whTexture));
+			bufferIn = rtb.getBuffer(RenderType.entityTranslucent(whTexture));
 		}
 		super.renderRecursively(bone, stack, bufferIn, packedLightIn, packedOverlayIn, red, green, blue, alpha);
 	}
@@ -69,7 +69,7 @@ To render the item with your entity, simply call `renderRecursively` in your ent
             // Change mainHand to predefined Itemstack and Mode to what transform you would want to use.
 			MinecraftClient.getInstance().getItemRenderer().renderItem(mainHand, Mode.THIRD_PERSON_RIGHT_HAND, packedLightIn, packedOverlayIn, stack, this.rtb);
 			stack.pop();
-			bufferIn = rtb.getBuffer(RenderLayer.getEntitySmoothCutout(whTexture));
+			bufferIn = rtb.getBuffer(RenderLayer.getEntityTranslucent(whTexture));
 		}
 		super.renderRecursively(bone, stack, bufferIn, packedLightIn, packedOverlayIn, red, green, blue, alpha);
 	}
