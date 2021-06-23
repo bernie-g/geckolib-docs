@@ -4,7 +4,6 @@ GeckoLib is an animation engine for Minecraft Mods, with support for complex 3D 
 
 ## Installation
 [![curseforge](http://cf.way2muchnoise.eu/versions/388172.svg)](https://www.curseforge.com/minecraft/mc-mods/geckolib)
-[![curseforge](https://img.shields.io/badge/Available%20for-1.17%20%7C%201.16%20%7C%201.15%20%7C%201.12-brightgreen)](https://www.curseforge.com/minecraft/mc-mods/geckolib)
 ![Java CI with Gradle](https://github.com/bernie-g/geckolib/workflows/Java%20CI%20with%20Gradle/badge.svg?branch=1.15)
 
 We use repsy.io for publishing as it provides easy access to releases and allows for javadocs in the jars (unlike curseforge).
