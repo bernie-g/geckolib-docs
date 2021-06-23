@@ -31,7 +31,7 @@ GeckoLib 3.0.0 supports Molang, and has several useful queries.
     - Y: `0`
     - Z: `math.sin(query.anim_time * 200) * 10`
     
-    ![!circle](../../images/gifs/molang-examples/horizontal-sine.gif){:width=350}
+    ![!circle](https://github.com/bernie-g/geckolib-docs/blob/master/docs/images/gifs/molang-examples/horizontal-sine.gif?raw=true){:width=350}
 
 ??? example "Circle"
     **Position:**
@@ -40,7 +40,7 @@ GeckoLib 3.0.0 supports Molang, and has several useful queries.
     - Y: `math.cos(query.anim_time * 200) * 10`
     - Z: `math.sin(query.anim_time * 200) * 10`
     
-    ![!circle](../../images/gifs/molang-examples/circle.gif){:width=350}
+    ![!circle](https://github.com/bernie-g/geckolib-docs/blob/master/docs/images/gifs/molang-examples/circle.gif?raw=true){:width=350}
 
 ??? example "Bouncy Cube"
     **Position:**
@@ -49,7 +49,7 @@ GeckoLib 3.0.0 supports Molang, and has several useful queries.
     - Y: `math.abs(math.sin(query.anim_time * 500) * math.exp(-0.5 * query.anim_time)) * 10`
     - Z: `0`
 
-    ![!cube](../../images/gifs/molang-examples/bouncy-cube.gif){:width=350}
+    ![!cube](https://github.com/bernie-g/geckolib-docs/blob/master/docs/images/gifs/molang-examples/bouncy-cube.gif?raw=true){:width=350}
 
 
 ??? example "Crystal"
@@ -59,7 +59,7 @@ GeckoLib 3.0.0 supports Molang, and has several useful queries.
     - Y: `math.cos(query.anim_time * 100) * 150`
     - Z: `math.sin(query.anim_time * 100) * 150`
     
-    ![!crystal](../../images/gifs/molang-examples/crystal.gif){:width=350}
+    ![!crystal](https://github.com/bernie-g/geckolib-docs/blob/master/docs/images/gifs/molang-examples/crystal.gif?raw=true){:width=350}
     
     
 ??? example "Arc"
@@ -78,7 +78,7 @@ GeckoLib 3.0.0 supports Molang, and has several useful queries.
     temp.control_height = 50;
     ```
     
-    ![!arc](../../images/gifs/molang-examples/arc.gif){:width=350}
+    ![!arc](https://github.com/bernie-g/geckolib-docs/blob/master/docs/images/gifs/molang-examples/arc.gif?raw=true){:width=350}
         
 ??? example "Human Idle"
     Left Arm:
@@ -105,7 +105,7 @@ GeckoLib 3.0.0 supports Molang, and has several useful queries.
     - Y: `0`
     - Z: `0`
     
-    ![!idle](../../images/gifs/molang-examples/idle_anim.gif){:width=350}
+    ![!idle](https://github.com/bernie-g/geckolib-docs/blob/master/docs/images/gifs/molang-examples/idle_anim.gif?raw=true){:width=350}
     
     Try out this model [here!](https://drive.google.com/uc?id=1KjG6O0A_Oh7yDlh42vYwMYekaR6CilHU)
     
