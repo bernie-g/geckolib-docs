@@ -6,7 +6,12 @@ GeckoLib is an animation engine for Minecraft Mods, with support for complex 3D 
 [![curseforge](http://cf.way2muchnoise.eu/versions/388172.svg)](https://www.curseforge.com/minecraft/mc-mods/geckolib)
 ![Java CI with Gradle](https://github.com/bernie-g/geckolib/workflows/Java%20CI%20with%20Gradle/badge.svg?branch=1.15)
 
-We use repsy.io for publishing as it provides easy access to releases and allows for javadocs in the jars (unlike curseforge).
+[![Hosted By: Cloudsmith](https://img.shields.io/badge/OSS%20hosting%20by-cloudsmith-blue?logo=cloudsmith&style=for-the-badge)](https://cloudsmith.com)
+
+Package repository hosting is graciously provided by  [Cloudsmith](https://cloudsmith.com).
+Cloudsmith is the only fully hosted, cloud-native, universal package management solution, that
+enables your organization to create, store and share packages in any format, to any place, with total
+confidence.
 
 Please see the [Getting Started guide](3.0.0) for detailed installation instructions per modding framework.
 
