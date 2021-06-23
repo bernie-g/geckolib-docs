@@ -124,7 +124,7 @@ GeckoLib 3.0.0 supports Molang, and has several useful queries.
     anim_speed = query.anim_time / 2;
     ```
     
-    ![!arc](../../images/gifs/molang-examples/anim_speed.gif){:width=350}
+    ![!arc](https://github.com/bernie-g/geckolib-docs/blob/master/docs/images/gifs/molang-examples/anim_speed.gif?raw=true){:width=350}
     
 Read about what all these queries do on the [wiki](https://bedrock.dev/docs/stable/MoLang#List%20of%20Entity%20Queries).
 
