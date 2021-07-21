@@ -10,7 +10,7 @@ Read this [forge article](https://mcforge.readthedocs.io/en/latest/tileentities/
 !!! note
     From now on, I will refer to them only as TileEntities. Fuck you Yarn, I don't care that it's a logically better name in every single way.
 
-After you do that, make your TileEntity implement [`IAnimatable`](https://github.com/bernie-g/geckolib-core/blob/master/src/main/java/software/bernie/geckolib/core/IAnimatable.java). Then, override the same methods as you would for an [animated entity](../entity_animations/#entity-class).
+After you do that, make your TileEntity implement [`IAnimatable`](https://github.com/bernie-g/geckolib-core/blob/master/src/main/java/software/bernie/geckolib/core/IAnimatable.java). Then, override the same methods as you would for an animated entity.
 
 ### Disabling the Vanilla Renderer
 By default, Minecraft will search for a blockstate file in your assets folder to figure out how to render your block. Since the GeckoLib renderer does everything differently, you'll need to disable this functionality.
