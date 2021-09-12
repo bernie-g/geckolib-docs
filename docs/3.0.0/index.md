@@ -1,6 +1,8 @@
 # Installation
 ## Installing the Library
-To install the actual geckolib forge library, insert this dependency snippet into your build.gradle. 
+To install the actual geckolib library, insert this dependency snippet into your build.gradle. 
+
+For Fabric use:
 
 === "Fabric 1.16.5"
     ```groovy
@@ -30,6 +32,7 @@ To install the actual geckolib forge library, insert this dependency snippet int
     }
     ```
     
+For Forge use:
     
 === "Forge 1.12.2"
     ```groovy
